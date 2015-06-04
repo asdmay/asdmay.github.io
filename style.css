@@ -1,0 +1,42 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.head{
+    height: 15%;
+    width: 100%;
+}
+
+.head:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.logo{
+    float: left;
+    background: white;
+    height: 100%;
+    width: 30%;
+}
+
+.menu{
+    float: left;
+    background: purple;
+    height: 100%;
+    width: 70%;
+}
+    
+
+.article{
+    background: blue;
+    height: 80%;
+}
+
+.copy_r{
+    Background: green;
+    height: 5%;
+}
