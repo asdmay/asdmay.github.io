@@ -29,6 +29,34 @@ html, body{
     height: 100%;
     width: 70%;
 }
+
+.home{
+    float: left;
+    background: red;
+    height: 100%;
+    width: 25%;
+}
+
+.works{
+    float: left;
+    background: pink;
+    height: 100%;
+    width: 25%;
+}
+
+.contact{
+    float: left;
+    background: red;
+    height: 100%;
+    width: 25%;
+}
+
+.about_me{
+    float: left;
+    background: pink;
+    height: 100%;
+    width: 25%;
+}
     
 
 .article{
