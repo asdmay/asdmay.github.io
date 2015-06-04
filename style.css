@@ -5,6 +5,8 @@ html, body{
     padding: 0;
 }
 
+/* logo,menu part */
+
 .head{
     height: 15%;
     width: 100%;
@@ -25,46 +27,66 @@ html, body{
 
 .menu{
     float: left;
-    background: purple;
     height: 100%;
     width: 70%;
 }
 
 .home{
     float: left;
-    background: red;
+    background: white;
     height: 100%;
     width: 25%;
+}
+.home:hover{
+    background: #ebf6f7;
 }
 
 .works{
     float: left;
-    background: pink;
+    background: white;
     height: 100%;
     width: 25%;
+}
+.works:hover{
+    background: #ebf6f7;
 }
 
 .contact{
     float: left;
-    background: red;
+    background: white;
     height: 100%;
     width: 25%;
 }
+.contact:hover{
+    background: #ebf6f7;
+}
+
 
 .about_me{
     float: left;
-    background: pink;
+    background: white;
     height: 100%;
     width: 25%;
 }
+.about_me:hover{
+    background: #ebf6f7;
+}
+
     
+/* article part */
 
 .article{
-    background: blue;
+    background: #c1e4e9;
     height: 80%;
 }
 
+.view_screen{
+}
+
+
+/* copy right part */
+
 .copy_r{
-    Background: green;
+    Background: white;
     height: 5%;
 }
