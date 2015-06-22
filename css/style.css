@@ -86,6 +86,11 @@ html, body{
     height: 80%;
 }
 
+.bxslider{
+    height: 50%;
+    width: 50%;
+}
+
 .slide_img{
     height: 50%;
     width: 50%;
