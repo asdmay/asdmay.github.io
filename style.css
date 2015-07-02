@@ -36,6 +36,7 @@ html, body{
     background: white;
     height: 100%;
     width: 25%;
+    font-align:center;
 }
 .home:hover{
     background: #ebf6f7;
