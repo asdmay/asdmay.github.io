@@ -136,24 +136,71 @@
 // days = Math.ceil(diff/(24 * 60 * 60 * 1000));
 // document.write(days);
 
-var num = Math.max(78, 92, 14, 27, 88);
-document.write(Math.max(78, 92, 14, 27, 88));
-document.write(Math.min(78, 92, 14, 27, 88));
+// var num = Math.max(78, 92, 14, 27, 88);
+// document.write(Math.max(78, 92, 14, 27, 88));
+// document.write(Math.min(78, 92, 14, 27, 88));
 
-var random = Math.random();
-if(random < 0.33){
-    document.write("大吉");
-}else if(random < 0.66){
-    document.write("吉");
-}else{
-    document.write("凶");
+// var random = Math.random();
+// if(random < 0.33){
+//     document.write("大吉");
+// }else if(random < 0.66){
+//     document.write("吉");
+// }else{
+//     document.write("凶");
+// }
+
+// var str = new String("たのしいJavaScript");
+// document.write(str,str.length);
+// for(var i = 0; i <= (str.length - 1); i++){
+//     document.write(str.charAt(i),"<br>");
+// }
+// var url = "http://www.yahoo.co.jp";
+// var text ="yahoo".link(url) + "で検索";
+// document.write(text);
+
+var names;
+names = new Array(4);
+names[0] = "山田太郎";
+names[1] = "中山一郎";
+names[2] = "井上花子";
+names[3] = "江藤さくら";
+
+for(var i = 0; i < (names.length); i++){
+    document.write(names[i]);
 }
 
-var str = new String("たのしいJavaScript");
-document.write(str,str.length);
-for(var i = 0; i <= (str.length - 1); i++){
-    document.write(str.charAt(i),"<br>");
+var days = new Array(7);
+days[0] = "月";
+days[1] = "火";
+days[2] = "水";
+days[3] = "木";
+days[4] = "金";
+days[5] = "土";
+days[6] = "日";
+
+var date = new Date();
+var day = days[6-date.getDay()];
+document.write(day);
+
+function compare(a, b){
+    return a - b;
 }
-var url = "http://www.yahoo.co.jp"
-var text ="yahoo".link(url) + "で検索";
-document.write(text);
+
+var ages = new Array(4, 2, 59, 28, 16, 33);
+ages = ages.sort(compare);
+document.write(ages.join("<"));
+		 
+var members = new Object();
+members["A001"] = "山田太郎";
+members["A002"] = "中山一郎";
+members["A003"] = "井上花子";
+members["A004"] = "江藤さくら";
+
+for(var number in members ){
+    document.write(number+" "+members[number], "<br>");
+}
+
+var data = [3, 4, 1, 5, 9, 2, 3, 8, 10];
+data = data.sort(compare);
+
+document.write(data);
