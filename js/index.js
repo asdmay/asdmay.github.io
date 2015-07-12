@@ -68,6 +68,34 @@ default:
     document.write("ちゃんとして！");
 }
 
+var MAX = 8;
+var i = 1;
+while(i <= MAX){
+    document.write(i);
+    document.write("西暦", 1988 + i ,"年<br>");
+    i++;
+}
+
+var ans = 17;
+var num;
+var msg = "好きな数字を入力して下さい";
+
+while(true){
+    num = prompt(msg, 0);
+    if(ans == num){
+	document.write("正解");
+	break;
+    }
+    
+    if(ans > num){
+	msg = "もっと大きい数字に変えて";
+    }else if(ans < num){
+	msg = "もっと小さい数字に変えて";
+    }else{
+	document.write("数字を入力して下さい");
+    }
+}
+
 function dollToyen(doll, rate){
     var yen;
     yen = doll * rate;
