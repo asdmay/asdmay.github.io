@@ -67,3 +67,27 @@ case 12:
 default:
     document.write("ちゃんとして！");
 }
+
+function dollToyen(doll, rate){
+    var yen;
+    yen = doll * rate;
+    return yen;
+}
+
+var yen1 = dollToyen(100, 90);
+document.write(yen1+ "円");
+
+var doll2 = 500;
+var rate2 = 80;
+
+var yen2 = dollToyen(doll2, rate2);
+document.write(yen2+"円");
+
+function testFunc(){
+   // var num;
+    num = 5;
+}
+
+var num = 3;
+testFunc();
+document.write(num);
