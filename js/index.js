@@ -158,49 +158,73 @@
 // var text ="yahoo".link(url) + "で検索";
 // document.write(text);
 
-var names;
-names = new Array(4);
-names[0] = "山田太郎";
-names[1] = "中山一郎";
-names[2] = "井上花子";
-names[3] = "江藤さくら";
+// var names;
+// names = new Array(4);
+// names[0] = "山田太郎";
+// names[1] = "中山一郎";
+// names[2] = "井上花子";
+// names[3] = "江藤さくら";
 
-for(var i = 0; i < (names.length); i++){
-    document.write(names[i]);
-}
+// for(var i = 0; i < (names.length); i++){
+//     document.write(names[i]);
+// }
 
-var days = new Array(7);
-days[0] = "月";
-days[1] = "火";
-days[2] = "水";
-days[3] = "木";
-days[4] = "金";
-days[5] = "土";
-days[6] = "日";
+// var days = new Array(7);
+// days[0] = "月";
+// days[1] = "火";
+// days[2] = "水";
+// days[3] = "木";
+// days[4] = "金";
+// days[5] = "土";
+// days[6] = "日";
 
-var date = new Date();
-var day = days[6-date.getDay()];
-document.write(day);
+// var date = new Date();
+// var day = days[6-date.getDay()];
+// document.write(day);
 
-function compare(a, b){
-    return a - b;
-}
+// function compare(a, b){
+//     return a - b;
+// }
 
-var ages = new Array(4, 2, 59, 28, 16, 33);
-ages = ages.sort(compare);
-document.write(ages.join("<"));
+// var ages = new Array(4, 2, 59, 28, 16, 33);
+// ages = ages.sort(compare);
+// document.write(ages.join("<"));
 		 
-var members = new Object();
-members["A001"] = "山田太郎";
-members["A002"] = "中山一郎";
-members["A003"] = "井上花子";
-members["A004"] = "江藤さくら";
+// var members = new Object();
+// members["A001"] = "山田太郎";
+// members["A002"] = "中山一郎";
+// members["A003"] = "井上花子";
+// members["A004"] = "江藤さくら";
 
-for(var number in members ){
-    document.write(number+" "+members[number], "<br>");
+// for(var number in members ){
+//     document.write(number+" "+members[number], "<br>");
+// }
+
+// var data = [3, 4, 1, 5, 9, 2, 3, 8, 10];
+// data = data.sort();
+// document.write(data);
+
+// for(var prop in navigator){
+//     document.write(prop, +" "+navigator[prop],"<br>");
+// }
+
+var platform = navigator.platform;
+
+if(platform.indexOf("Mac") >= 0){
+    document.write("まかー");
+}else if(platform.indexOf("Win") >= 0){
+    document.write("うぃんでゅー");
+}else{
+    document.write("????");
 }
 
-var data = [3, 4, 1, 5, 9, 2, 3, 8, 10];
-data = data.sort(compare);
+function func(str){
+    alert(str + "おしたー");
+}
 
-document.write(data);
+function init(){
+    alert("ドキュメントが読み込まれました");
+}
+window.onload = init;//()はいらない。関数をオブジェクトとして扱うから
+
+
