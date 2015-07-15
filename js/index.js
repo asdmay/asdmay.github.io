@@ -208,15 +208,15 @@
 //     document.write(prop, +" "+navigator[prop],"<br>");
 // }
 
-var platform = navigator.platform;
+// var platform = navigator.platform;
 
-if(platform.indexOf("Mac") >= 0){
-    document.write("まかー");
-}else if(platform.indexOf("Win") >= 0){
-    document.write("うぃんでゅー");
-}else{
-    document.write("????");
-}
+// if(platform.indexOf("Mac") >= 0){
+//     document.write("まかー");
+// }else if(platform.indexOf("Win") >= 0){
+//     document.write("うぃんでゅー");
+// }else{
+//     document.write("????");
+// }
 
 function func(str){
     alert(str + "おしたー");
@@ -228,3 +228,17 @@ function init(){
 window.onload = init;//()はいらない。関数をオブジェクトとして扱うから
 
 
+function stdWeight(myForm){
+    var height, weight;
+    height = Number(myForm.height.value);
+    if(myForm.sex[0].checked){
+	weight = (height - 80) * 0.7;
+    }else{
+	weight = (height - 70) * 0.6;
+    }
+    myForm.weight.value = weight;
+}
+
+function openYahoo(){
+    git practice
+}
