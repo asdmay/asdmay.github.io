@@ -241,4 +241,5 @@ function stdWeight(myForm){
 
 function openYahoo(){
     git practice
+    ターミナル
 }
