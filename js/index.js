@@ -240,6 +240,5 @@ function stdWeight(myForm){
 }
 
 function openYahoo(){
-    git practice
-    ターミナル
+    var win = window.open("http://www.yahoo.co.jp", "");
 }
