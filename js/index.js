@@ -218,35 +218,35 @@
 //     document.write("????");
 // }
 
-function func(str){
-    alert(str + "おしたー");
-}
+// function func(str){
+//     alert(str + "おしたー");
+// }
 
-function stdWeight(myForm){
-    var height, weight;
-    height = Number(myForm.height.value);
-    if(myForm.sex[0].checked){
-	weight = (height - 80) * 0.7;
-    }else{
-	weight = (height - 70) * 0.6;
-    }
-    myForm.weight.value = weight;
-}
+// function stdWeight(myForm){
+//     var height, weight;
+//     height = Number(myForm.height.value);
+//     if(myForm.sex[0].checked){
+// 	weight = (height - 80) * 0.7;
+//     }else{
+// 	weight = (height - 70) * 0.6;
+//     }
+//     myForm.weight.value = weight;
+// }
 
 function openYahoo(){
     var win = window.open("http://www.yahoo.co.jp", "");
 }
 
-function openImg(){
-    var open = window.open("", "", " width=600, height=800");
-    win.document.open();
-    win.document.write("<img src='img/img1.png'>");
-    win.document.write("<form>");
-    win.document.write('<input type ="button", value ="閉じる"');
-    win.document.write('onclick="window.close()">');
-    win.documemt.write("</form>");
-    win.document.close();
-}
+// function openImg(){
+//     var open = window.open("", "", " width=600, height=800");
+//     win.document.open();
+//     win.document.write("<img src='img/img1.png'>");
+//     win.document.write("<form>");
+//     win.document.write('<input type ="button", value ="閉じる"');
+//     win.document.write('onclick="window.close()">');
+//     win.documemt.write("</form>");
+//     win.document.close();
+// }
 
 var hourBox, minBox, secBox;
 var timer;
@@ -285,3 +285,27 @@ function changeImg(){
     if(num == 3) num = 1;
 }
 
+function Person(name,height){
+    this.name = name;
+    this.height = height;
+}
+
+var friends = new Array(3);
+friends[0]= new Person("田中太郎",175);
+friends[1]= new Person("鈴木花子",160);
+friends[2]= new Person("高橋次郎",180);
+
+
+
+function calcWeight(){
+    var weight;
+    weight = (this.height - 100) * 0.9;
+    return weight;
+}
+
+Person.prototype.stdWeight = calcWeight;
+
+for(var i = 0; i <= friends.length - 1; i++){
+    document.write(friends[i].name, friends[i].height, "cm", "<br>");
+    document.write(friends[i].stdWeight(), "kg", "<br>");
+}
