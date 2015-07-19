@@ -222,12 +222,6 @@ function func(str){
     alert(str + "おしたー");
 }
 
-function init(){
-    alert("ドキュメントが読み込まれました");
-}
-window.onload = init;//()はいらない。関数をオブジェクトとして扱うから
-
-
 function stdWeight(myForm){
     var height, weight;
     height = Number(myForm.height.value);
@@ -242,3 +236,52 @@ function stdWeight(myForm){
 function openYahoo(){
     var win = window.open("http://www.yahoo.co.jp", "");
 }
+
+function openImg(){
+    var open = window.open("", "", " width=600, height=800");
+    win.document.open();
+    win.document.write("<img src='img/img1.png'>");
+    win.document.write("<form>");
+    win.document.write('<input type ="button", value ="閉じる"');
+    win.document.write('onclick="window.close()">');
+    win.documemt.write("</form>");
+    win.document.close();
+}
+
+var hourBox, minBox, secBox;
+var timer;
+function init(){
+    hourBox = document.clockForm.hour;
+    minBox = document.clockForm.minite;
+    secBox = document.clockForm.second;
+    dClock();
+}
+window.onload = init;//()はいらない。関数をオブジェクトとして扱うから
+
+function dClock(){
+    var now = new Date();
+    var hour = now.getHours();
+    var min = now.getMinutes();
+    var sec = now.getSeconds();
+
+    if(hour < 10) hour = "0" + hour;
+    if(min < 10) min = "0" + min;
+    if(sec < 10) sec = "0" + sec;//見栄えのため
+
+    hourBox.value = hour;
+    minBox.value = min;
+    secBox.value = sec;
+    timer = setTimeout("dClock()", 1000);
+}
+
+function stopTimer(){
+    timer = clearTimeout(timer);
+}
+
+var num = 1;
+function changeImg(){
+    document.myImg.src ="img/img" + num + ".png";
+    num++;
+    if(num == 3) num = 1;
+}
+

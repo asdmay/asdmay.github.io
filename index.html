@@ -33,8 +33,24 @@
 	<input type="button" value="計算" name="calc" onclick="stdWeight(this.form)"><br>
 	理想体重<input type="text" name="weight">kg<br>
       </form>
-      <input type="button" value="ググる" name="search" onclick="openYahoo()"
+      <form name ="buttonForm">
+	<input type="button" value="ググる" name="search" onclick="openYahoo()">
+	<input type="button" value="たこやき" name="img" onclick="openImg()">
+      </form>
+
+      <form name ="clockForm">
+	<input type="text" name="hour">時
+	<input type="text" name="minite">分
+	<input type="text" name="second">秒
+      </form>
+
+      <form>
+	<input type="button" value="時間を止める" name="stop" onclick="stopTimer()">
+      </form>
       
+      <img src="img/img1.png" name="myImg" width="250" height="250"
+	   onclick="changeImg()"
+	   onmouseout="this.src='img/myimg.png';">
     </div>
     <div class ="view_side"></div>
     <div class ="article_comment"></div>
