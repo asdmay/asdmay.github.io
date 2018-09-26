@@ -17,4 +17,14 @@ html, body{
   background: url("../img/fab.png");
   background-color: #4588AD;
   background-size: contain;
+  text-align: center;
+  color: #fff;
+}
+
+.Top__title {
+  text-align: center;
+}
+
+.Top__text {
+  font-weight: 600;
 }
