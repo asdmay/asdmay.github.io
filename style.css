@@ -6,88 +6,10 @@ html, body{
 }
 
 /* logo,menu part */
-
-.head{
-    height: 15%;
-    width: 100%;
-}
-
-.head:after{
-    content: "";
-    display: block;
-    clear: both;
-}
-
-.logo{
-    float: left;
-    background: white;
-    height: 100%;
-    width: 30%;
-}
-
-.menu{
-    float: left;
-    height: 100%;
-    width: 70%;
-}
-
-.home{
-    float: left;
-    background: white;
-    height: 100%;
-    width: 25%;
-    font-align:center;
-}
-.home:hover{
-    background: #ebf6f7;
-}
-
-.works{
-    float: left;
-    background: white;
-    height: 100%;
-    width: 25%;
-}
-.works:hover{
-    background: #ebf6f7;
-}
-
-.contact{
-    float: left;
-    background: white;
-    height: 100%;
-    width: 25%;
-}
-.contact:hover{
-    background: #ebf6f7;
-}
-
-
-.about_me{
-    float: left;
-    background: white;
-    height: 100%;
-    width: 25%;
-}
-.about_me:hover{
-    background: #ebf6f7;
-}
-
-    
-/* article part */
-
-.article{
-    background: #c1e4e9;
-    height: 80%;
-}
-
-.view_screen{
-}
-
-
-/* copy right part */
-
-.copy_r{
-    Background: white;
-    height: 5%;
+.Top {
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/fab.png");
+  background-color: #4588AD;
+  background-size: contain;
 }
