@@ -7,7 +7,11 @@
     "lib": "lib"
   },
   "dependencies": {
-    "normalize.css": "^8.0.0"
+    "normalize.css": "^8.0.0",
+    "stylelint": "^9.6.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^1.0.0",
+    "stylelint-scss": "^3.3.2"
   },
   "devDependencies": {
     "browser-sync": "^2.24.7",
@@ -16,7 +20,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp: "gulp"
+    "gulp": "gulp",
+    "stylelint": "stylelint \"./src/**/*.scss\" --fix"
   },
   "repository": {
     "type": "git",
