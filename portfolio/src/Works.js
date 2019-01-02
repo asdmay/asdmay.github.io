@@ -28,7 +28,6 @@ class Works extends Component {
               <h2>{works[1].title}</h2>
               <p>{works[1].description}</p>
             </li>
-          }
         </ul>
       </section>
     );
