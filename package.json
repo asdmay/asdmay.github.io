@@ -1,37 +1,32 @@
 {
-  "name": "asdmay.github.io",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "normalize.css": "^8.0.0",
-    "stylelint": "^9.6.0",
-    "stylelint-config-standard": "^18.2.0",
-    "stylelint-order": "^1.0.0",
-    "stylelint-scss": "^3.3.2"
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-scripts": "2.1.2",
+    "ress": "^1.2.2"
   },
-  "devDependencies": {
-    "browser-sync": "^2.24.7",
-    "gulp": "^3.9.1",
-    "gulp-sass": "^4.0.1"
-  },
+  "homepage": "http://asdmay.github.io",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "gulp",
-    "stylelint": "stylelint \"./src/**/*.scss\" --fix"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/asdmay/asdmay.github.io.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/asdmay/asdmay.github.io/issues"
-  },
-  "homepage": "https://github.com/asdmay/asdmay.github.io#readme"
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
