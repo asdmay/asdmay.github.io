@@ -1,10 +1,9 @@
 import React from 'react';
-import Title from './Title';
-
+import { DescriptionTitle } from './component/atom/Title.js';
 function LinkList(props) {
   const links = props.links;
   const listItems = links.map((links) => 
-    <li className="LiskList-item" key={links.key}><a target="_blank" rel="noopener noreferrer" href={links.url}>{(links.title)+"だよ"}</a></li>
+    <li className="LinkList-item" key={links.key}><a target="_blank" rel="noopener noreferrer" href={links.url}>{links.title}</a></li>
   );
   return (
     <ul>{listItems}</ul>
@@ -18,11 +17,15 @@ const links = [
 ];
 
 function Links(props){
+  const style = {
+    marginBottom: "20px",
+    marginLeft: "24px"
+  };
   return (
-    <section>
-      <Title title="Links" />
+    <div style ={style}>
+      <DescriptionTitle>SNS</DescriptionTitle>
       <LinkList links={links} /> 
-    </section>
+    </div>
   )
 };
 

@@ -1,9 +1,9 @@
 import React from 'react';
-import './Title.css';
+import textTitle from './component/atom/textTitle.js';
 
 function Title(props) {
   return(
-  <h1 className="Title">{props.title}</h1>
+    <textTitle title={props.title} />
   );
 }
 
