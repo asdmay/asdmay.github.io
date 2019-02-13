@@ -2,6 +2,7 @@ import React from 'react';
 
 const Title = (props) => {
   const style = {
+    paddingBottom: "40px",
     color: "#000000",
     fontWeight: "bold",
     fontSize: props.fontSize,
@@ -27,7 +28,7 @@ export const DescriptionTitle = (props) => {
 };
 
 export const PageTitle= (props) => (
-  <Title fontSize="14px" textAlign="left">{props.children}</Title>
+  <Title paddingBottom="0" fontSize="14px" textAlign="left">{props.children}</Title>
 );
 
 export const SectionTitle= (props) => (

@@ -1,5 +1,5 @@
 import React from 'react';
-import Text from '../atom/text.js';
+import Text from '../atom/Text.js';
 import { DescriptionTitle } from '../atom/Title.js';
 
 const Description = (props) => {
