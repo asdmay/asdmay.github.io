@@ -4,7 +4,7 @@ const Img = (props) => {
   const style = {
     marginBottom: "8px",
     width: "100%",
-    border: "solid 1px #999999"
+    border: props.border
   };
   return (
     <img src={props.src} alt={props.alt} style={style} />
