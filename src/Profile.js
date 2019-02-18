@@ -1,16 +1,20 @@
-import React, { Component } from 'react';
-import Title from './Title';
+import React from 'react';
+import { SectionTitle } from './component/atom/Title.js';
+import Description from './component/mls/Description.js';
+import { Links , Lists } from './Links.js';
 
-class Profile extends Component {
-  render(){
-    return (
-      <section>
-        <Title title="Profile" />
-         <h2>Maaya Ashida</h2>
-         <p>profileだよ</p>
-      </section>
-    );
-  }
+function Profile(props) {
+  const style = {
+    margin: "40px 0"
+  };
+  return (
+    <section style={style}>
+      <SectionTitle>Profile</SectionTitle>
+      <Description title="Maaya Ashida" text="某IT企業のゆるふわデザイナー" />
+      <Links />
+      <Lists />
+    </section>
+  );
 }
 
 export default Profile;

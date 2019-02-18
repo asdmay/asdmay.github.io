@@ -1,37 +1,33 @@
-import React, { Component } from 'react';
-import Title from './Title';
+import React from 'react';
+import { SectionTitle } from './component/atom/Title.js';
+import Work from './component/org/Work.js';
 
 const works = [
   {
-    title: 'hoge',
-    description: 'もにゃもにゃ',
-    img: 'sample.png'
+    title: 'line stamp',
+    text: 'ゆるく使えるLINEスタンプ',
+    src: './img/rect.png',
+    art: 'いけてるサムネ'
   },
   {
-    title: 'fuga',
-    description: 'もにゃもにゃ',
-    img: 'sample.png'
+    title: 'line stamp2',
+    text: 'ゆるく使えるLINEスタンプ',
+    src: './img/rect.png',
+    art: 'いけてるサムネ'
   }
 ];
 
-class Works extends Component {
-  render() {
-    return (
-      <section>
-        <Title title="Works" />
-        <ul>
-            <li>
-              <h2>{works[0].title}</h2>
-              <p>{works[0].description}</p>
-            </li>
-            <li>
-              <h2>{works[1].title}</h2>
-              <p>{works[1].description}</p>
-            </li>
-        </ul>
-      </section>
-    );
-  }
+function Works(props) {
+  const style = {
+    margin: "40px 0"
+  };
+  return (
+    <section style={style}>
+      <SectionTitle>Works</SectionTitle>
+      <Work title={works[0].title} text={works[0].text} src={works[0].src} alt={works[0].alt} />
+      <Work title={works[1].title} text={works[1].text} src={works[1].src} alt={works[1].alt} />
+    </section>
+  );
 }
 
 export default Works;
