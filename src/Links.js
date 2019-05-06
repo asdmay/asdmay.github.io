@@ -16,9 +16,9 @@ function LinkList(props) {
 }
 
 const links = [
-  {id: 1, title: "Facebook", url: "https://www.facebook.com/?locale=ja_JP"},
-  {id: 2, title: "Twitter", url: "https://twitter.com/"} ,
-  {id: 3, title: "Instagram", url: "https://www.instagram.com"}
+  {id: 1, title: "Facebook", url: "https://www.facebook.com/mashida1209"},
+  {id: 2, title: "Twitter", url: "https://twitter.com/pntgn09"} ,
+  {id: 3, title: "Instagram", url: "https://www.instagram.com/maaya_ashida/"}
 ];
 
 export const Links = (props) => {
