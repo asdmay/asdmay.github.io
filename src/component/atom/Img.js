@@ -3,11 +3,13 @@ import React from 'react';
 const Img = (props) => {
   const style = {
     marginBottom: "8px",
-    width: "100%",
-    border: props.border
+    padding: props.padding,
+    maxWidth: "100%",
+    outline: props.outline,
+    outlineOffset: "-8px",
   };
   return (
-    <img src={props.src} alt={props.alt} style={style} />
+      <img src={props.src} alt={props.alt} style={style} />
   );
 };
 

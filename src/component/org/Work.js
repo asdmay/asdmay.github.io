@@ -6,7 +6,7 @@ const Work = (props) => {
   };
   return (
     <div style={style}>
-      <Img src={props.src} alt={props.alt} border="solid 1px #999999"
+      <Img src={props.src} alt={props.alt} outline="solid 1px #999999" padding="8px"
 />
       <Description title={props.title} text={props.text} />
 
