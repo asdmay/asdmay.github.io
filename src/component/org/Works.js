@@ -4,31 +4,32 @@ import Work from '../mls/Work.js';
 
 const works = [
   {
-    title: 'おもちぐまのスタンプ',
-    text: 'オリジナルキャラのおもちぐまのスタンプ。まじかわいい。便利。',
+    title: '愛されるVUIへの道のり',
+    text: '魅力的な音声UIについて書いたTechBlogの記事です',
+    src: './img/vui.png',
+    art: '愛されるVUIへの道のり',
+    href: 'https://techblog.yahoo.co.jp/advent-calendar-2018/design-endearing-vui/'
+  },
+  {
+    title: 'おもちぐまのLINEスタンプ',
+    text: 'おもちみたいなくま「おもちぐま」がLINE上の会話を弾ませてくれます',
     src: '/img/omochiguma.png',
     art: 'おもちぐまのスタンプ',
     href: 'https://store.line.me/stickershop/product/7154677/ja'
   },
   {
     title: 'KUMA NO STAMP ~1st IMPACT~',
-    text: 'ゆるく使えるLINEスタンプ',
+    text: 'お茶を濁したい時に使える便利なLINEスタンプです',
     src: './img/kuma_stamp.png',
     art: 'KUMA NO STAMP',
-    href: 'https://store.line.me/stickershop/product/1333908/ja?from=sticker'
-  },
-  {
-    title: 'hoge',
-    text: 'ゆるく使えるLINEスタンプ',
-    src: './img/vui.png',
-    art: 'hoge',
     href: 'https://store.line.me/stickershop/product/1333908/ja?from=sticker'
   }
 ];
 
 function Works(props) {
   const style = {
-    margin: "40px 0"
+    padding: "40px 0",
+    backgroundColor: "#eeeeee"
   };
   return (
     <section style={style}>

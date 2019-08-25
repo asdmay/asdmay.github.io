@@ -5,7 +5,7 @@ import { Skill , Sns } from '../mls/List.js';
 
 function Profile(props) {
   const style = {
-    margin: "40px 0"
+    padding: "40px 0"
   };
   return (
     <section style={style}>
