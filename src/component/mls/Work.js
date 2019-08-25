@@ -5,12 +5,13 @@ const Work = (props) => {
   const style = {
   };
   return (
-    <div style={style}>
-      <Img src={props.src} alt={props.alt} outline="solid 1px #999999" padding="8px"
+    <li style={style}>
+      <a href={props.href}>
+        <Img src={props.src} alt={props.alt} outline="solid 1px #999999" padding="8px"
 />
+      </a>
       <Description title={props.title} text={props.text} />
-
-    </div>
+    </li>
   );
 };
 

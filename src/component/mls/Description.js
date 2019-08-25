@@ -5,7 +5,8 @@ import { DescriptionTitle } from '../atom/Title.js';
 const Description = (props) => {
   const style = {
     marginBottom: "20px",
-    marginLeft: "24px"
+    marginLeft: "24px",
+    marginRight: "24px"
   };
   return (
     <div style={style}>

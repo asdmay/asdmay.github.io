@@ -3,7 +3,7 @@ import React from 'react';
 const Text = (props) => {
   const style = {
     color: "#000000",
-    fonstSize: "32px",
+    fontSize: "16px",
     fontFamily: 'roboto'
   };
   return (

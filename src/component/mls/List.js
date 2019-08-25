@@ -1,5 +1,6 @@
 import React from 'react';
-import { DescriptionTitle } from './component/atom/Title.js';
+import { DescriptionTitle } from '../atom/Title.js';
+
 function LinkList(props) {
   const links = props.links;
   const style = {
@@ -7,8 +8,8 @@ function LinkList(props) {
     fontFamily: "roboto",
     listStyle: "none"
   };
-  const listItems = links.map((links) => 
-    <li className="LinkList-item" key={links.key} style={style}>・<a target="_blank" rel="noopener noreferrer" href={links.url} style={style}>{links.title}</a></li>
+  const listItems = links.map((links, index) => 
+    <li className="LinkList-item" key={toString(index)} style={style}>・<a target="_blank" rel="noopener noreferrer" href={links.url} style={style}>{links.title}</a></li>
   );
   return (
     <ul>{listItems}</ul>
@@ -16,12 +17,21 @@ function LinkList(props) {
 }
 
 const links = [
-  {id: 1, title: "Facebook", url: "https://www.facebook.com/mashida1209"},
-  {id: 2, title: "Twitter", url: "https://twitter.com/pntgn09"} ,
-  {id: 3, title: "Instagram", url: "https://www.instagram.com/maaya_ashida/"}
+  {
+    title: "Facebook",
+    url: "https://www.facebook.com/mashida1209"
+  },
+  {
+    title: "Twitter",
+    url: "https://twitter.com/pntgn09"
+  } ,
+  {
+    title: "Instagram",
+    url: "https://www.instagram.com/maaya_ashida/"
+  }
 ];
 
-export const Links = (props) => {
+export const Sns = (props) => {
   const style = {
     marginBottom: "20px",
     marginLeft: "24px",
@@ -36,9 +46,15 @@ export const Links = (props) => {
 };
 
 const lists = [
-  {id: 1, content: "html, css, javascript"},
-  {id: 2, content: "Sketch, Prott"},
-  {id: 3, content: "Illustrator, Photoshop"}
+  {
+    content: "html, css, javascript"
+  },
+  {
+    content: "Sketch, Prott"
+  },
+  {
+    content: "Illustrator, Photoshop"
+  }
 ];
 
 const TextList = (props) => {
@@ -47,8 +63,8 @@ const TextList = (props) => {
     fontFamily: "roboto",
     listStyle: "none"
   };
-  const listItems = lists.map((lists) =>
-    <li key={lists.key} style={style}>・{lists.content}</li>
+  const listItems = lists.map((lists,index) =>
+    <li key={toString(index)} style={style}>・{lists.content}</li>
   );
   return (
     <ul>{listItems}</ul>
@@ -56,7 +72,7 @@ const TextList = (props) => {
 };
 
 
-export const Lists = (props) => {
+export const Skill = (props) => {
   const style = {
     marginBottom: "20px",
     marginLeft: "24px",
