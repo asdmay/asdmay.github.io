@@ -13,7 +13,7 @@ const works = [
   {
     title: 'おもちぐまのLINEスタンプ',
     text: 'おもちみたいなくま「おもちぐま」がLINE上の会話を弾ませてくれます',
-    src: '/img/omochiguma.png',
+    src: './img/omochiguma.png',
     art: 'おもちぐまのスタンプ',
     href: 'https://store.line.me/stickershop/product/7154677/ja'
   },
