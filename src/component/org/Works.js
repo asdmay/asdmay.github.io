@@ -28,8 +28,7 @@ const works = [
 
 function Works(props) {
   const style = {
-    padding: "40px 0",
-    backgroundColor: "#eeeeee"
+    padding: "40px 0"
   };
   return (
     <section style={style}>

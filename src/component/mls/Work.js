@@ -5,21 +5,21 @@ const Work = (props) => {
   const style = {
     listStyleType : "none",
     textDecoration: "none",
-    backgroundColor: "#ffffff",
-    marginBottom: "24px",
+    marginBottom: "48px",
     marginLeft: "16px",
-    marginRight: "16px"
+    marginRight: "16px",
+    outline:"solid 1px #cccccc"
 
   };
   const linkstyle = {
     listStyleType : "none",
     textDecoration: "none",
-    backgroundColor: "#ffffff",
+
   };
   return (
     <li style={style}>
       <a href={props.href} style={linkstyle}>
-        <Img src={props.src} alt={props.alt} outline="solid 1px #999999" padding="16px"
+        <Img src={props.src} alt={props.alt} outline="solid 1px #cccccc" padding="16px"
 />
         <Description title={props.title} text={props.text} />
       </a>
