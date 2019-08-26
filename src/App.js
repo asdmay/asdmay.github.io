@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Profile from './Profile';
-import Works from './Works';
+import Profile from './component/org/Profile.js';
+import Works from './component/org/Works';
 import Img from './component/atom/Img.js';
 import Header from './component/mls/Header.js';
 import Footer from './component/mls/Footer.js';

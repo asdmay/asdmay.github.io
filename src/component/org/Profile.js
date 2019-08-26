@@ -1,18 +1,18 @@
 import React from 'react';
-import { SectionTitle } from './component/atom/Title.js';
-import Description from './component/mls/Description.js';
-import { Links , Lists } from './Links.js';
+import { SectionTitle } from '../atom/Title.js';
+import Description from '../mls/Description.js';
+import { Skill , Sns } from '../mls/List.js';
 
 function Profile(props) {
   const style = {
-    margin: "40px 0"
+    padding: "40px 0"
   };
   return (
     <section style={style}>
       <SectionTitle>Profile</SectionTitle>
       <Description title="Maaya Ashida" text="某IT企業のゆるふわデザイナー" />
-      <Links />
-      <Lists />
+      <Skill />
+      <Sns />
     </section>
   );
 }
