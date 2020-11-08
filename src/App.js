@@ -4,7 +4,8 @@ import Works from './component/org/Works';
 import Img from './component/atom/Img.js';
 import Header from './component/mls/Header.js';
 import Footer from './component/mls/Footer.js';
-import AboutMe from "./component/AboutMe.js"
+import AboutMe from "./component/AboutMe.js";
+import Article from "./component/Article.js";
 
 
 class App extends Component {
@@ -12,6 +13,7 @@ class App extends Component {
     return (
       <div className="App">
         <AboutMe />
+        <Article />
         <Header />
         <Img src={"./img/top.png"} alt={"top"}/>
         <Profile />

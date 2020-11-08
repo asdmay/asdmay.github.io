@@ -33,7 +33,7 @@ const BoldText = styled(Text)`
 font-weight: bold;
 `
 
-const AboutMe = () =>{
+const AboutMe = () => {
   return (
     <Section>
       <Image src={"./img/top.png"} width={503} height={503}/>
@@ -48,8 +48,5 @@ const AboutMe = () =>{
     </Section>
   )
 }
-
-
-
 
 export default AboutMe
