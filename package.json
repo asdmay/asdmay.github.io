@@ -6,7 +6,8 @@
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "4.0.0",
-    "ress": "^1.2.2"
+    "ress": "^1.2.2",
+    "styled-components": "^5.2.1"
   },
   "homepage": "http://asdmay.github.io",
   "scripts": {
