@@ -16,12 +16,5 @@ module.exports = {
     },
     "plugins": [
         "react"
-    ],
-    "rules": {
-        css: {
-            lint: {
-                unknownAtRules: "ignore"
-            }
-        }
-    }
+    ]
 };
