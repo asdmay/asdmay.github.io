@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Section = styled.section`
   display: flex;
-  padding: 48px 0;
+  padding: 64px 0 0;
   margin: 0 auto;
   width: 1024px;
 `
@@ -14,6 +14,7 @@ const Title = styled.h1`
 `
 
 const Image = styled.img`
+  border-radius: 260px;
 `
 
 const TextArea = styled.div`

@@ -14,6 +14,7 @@ class App extends Component {
       <div className="App">
         <AboutMe />
         <Article />
+        <Article />
         <Header />
         <Img src={"./img/top.png"} alt={"top"}/>
         <Profile />

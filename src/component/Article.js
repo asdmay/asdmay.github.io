@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 
 const Section = styled.section`
-  padding: 64px;
+  padding: 64px 0;
   margin: 0 auto;
   width: 1024px;
 `
@@ -16,8 +16,8 @@ const Title = styled.h1`
 const ArticleItem = styled.article`
   margin-top: 32px;
   overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 `
 const ArticleLink = styled.a`
   display: flex;
