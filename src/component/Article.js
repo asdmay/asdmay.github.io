@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components'
 
 const Section = styled.section`
-  padding: 64px 0;
+  padding: 64px 64px 0;
   margin: 0 auto;
   width: 1024px;
 `
