@@ -42,13 +42,8 @@ const SNS = () => {
                     </SNSLink>
                 </SNSListItem>
                 <SNSListItem>
-                    <SNSLink href={"https://twitter.com/pntgn09"}>
-                    <SNSImage src={"./img/Twitter.png"} width={64} height={64} />
-                    </SNSLink>
-                </SNSListItem>
-                <SNSListItem>
-                    <SNSLink href={"https://twitter.com/pntgn09"}>
-                    <SNSImage src={"./img/Twitter.png"} width={64} height={64} />
+                    <SNSLink href={"https://www.instagram.com/maaya_ashida/"}>
+                    <SNSImage src={"./img/Instagram.png"} width={64} height={64} />
                     </SNSLink>
                 </SNSListItem>
             </SNSList>
