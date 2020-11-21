@@ -12,8 +12,10 @@ const Title = styled.h1`
   text-align: center;
   margin-bottom: 64px;
 `
+const ArticleList = styled.ul`
+`
 
-const ArticleItem = styled.article`
+const ArticleListItem = styled.li`
   margin-top: 32px;
   overflow: hidden;
   border-radius: 16px;
@@ -48,16 +50,8 @@ const Article = () => {
     return (
         <Section>
             <Title>Article</Title>
-            <ArticleItem>
-              <ArticleLink href={"https://techblog.yahoo.co.jp/"}>
-                <ArticleImage src={"./img/vui.png"} width={375} height={272}/>
-                <TextArea>
-                  <ArticleTitle>ArticleTitle</ArticleTitle>
-                  <ArticleText>hogehogehogehogehogehogegehogehogehogehogehogehogehogegehogehogehogehogehogehogehogegehoge</ArticleText>
-                </TextArea>
-              </ArticleLink>
-            </ArticleItem>
-            <ArticleItem>
+            <ArticleList>
+            <ArticleListItem>
             <ArticleLink href={"https://techblog.yahoo.co.jp/"}>
               <ArticleImage src={"./img/vui.png"} width={375} height={272}/>
               <TextArea>
@@ -65,7 +59,8 @@ const Article = () => {
                 <ArticleText>hogehogehogehogehogehogegehogehogehogehogehogehogehogegehogehogehogehogehogehogehogegehoge</ArticleText>
               </TextArea>
               </ArticleLink>
-            </ArticleItem>
+            </ArticleListItem>
+            </ArticleList>
         </Section>
     )
 }
