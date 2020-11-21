@@ -19,7 +19,7 @@ const ArticleListItem = styled.li`
   margin-top: 32px;
   overflow: hidden;
   border-radius: 16px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
 `;
 const ArticleLink = styled.a`
   display: flex;
@@ -31,7 +31,7 @@ const ArticleText = styled.p`
   color: rgba(0, 0, 0, 0.9);
   overflow-wrap: break-word;
 `;
-const ArticleTitle = styled.h1`
+const ArticleTitle = styled.h2`
   font-size: 1.3rem;
   color: rgba(0, 0, 0, 0.9);
   font-weight: bold;

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from "prop-types";
 
 const Section = styled.section`
   padding: 64px 64px 0;
@@ -14,7 +15,7 @@ const Title = styled.h1`
 `
 const GalleryImage = styled.img`
   border-radius: 16px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
 `
 const GalleryLink = styled.a`
 `
@@ -31,44 +32,28 @@ const GalleryListItem = styled.li`
   }
 `
 
-
-const Gallery = () => {
+const Gallery = props => {
+  if (props.galleryItems.length === 0) {
+    return null;
+  }
     return (
         <Section>
             <Title>Illustration</Title>
             <GalleryList>
-                <GalleryListItem>
-                  <GalleryLink href={"https://www.instagram.com/p/CHncP4DDBHk/?utm_source=ig_web_copy_link"}>
-                    <GalleryImage src={"./img/omochiguma_01.png"}  width={256} height={256}/>
+              {props.galleryItems.map((item, number) => (
+                <GalleryListItem number={number} key={number.toString()}>
+                  <GalleryLink href={item.link}>
+                    <GalleryImage src={item.image} width={256} height={256}/>
                   </GalleryLink>
                 </GalleryListItem>
-                <GalleryListItem>
-                  <GalleryLink href={"https://www.instagram.com/p/CHncP4DDBHk/?utm_source=ig_web_copy_link"}>
-                    <GalleryImage src={"./img/omochiguma_01.png"}  width={256} height={256}/>
-                  </GalleryLink>
-                </GalleryListItem>
-                <GalleryListItem>
-                  <GalleryLink href={"https://www.instagram.com/p/CHncP4DDBHk/?utm_source=ig_web_copy_link"}>
-                    <GalleryImage src={"./img/omochiguma_01.png"}  width={256} height={256}/>
-                  </GalleryLink>
-                </GalleryListItem>
-                <GalleryListItem>
-                  <GalleryLink href={"https://www.instagram.com/p/CHncP4DDBHk/?utm_source=ig_web_copy_link"}>
-                    <GalleryImage src={"./img/omochiguma_01.png"}  width={256} height={256}/>
-                  </GalleryLink>
-                </GalleryListItem>
-                <GalleryListItem>
-                  <GalleryLink href={"https://www.instagram.com/p/CHncP4DDBHk/?utm_source=ig_web_copy_link"}>
-                    <GalleryImage src={"./img/omochiguma_01.png"}  width={256} height={256}/>
-                  </GalleryLink>
-                </GalleryListItem>
-                <GalleryListItem>
-                  <GalleryLink href={"https://www.instagram.com/p/CHncP4DDBHk/?utm_source=ig_web_copy_link"}>
-                    <GalleryImage src={"./img/omochiguma_01.png"}  width={256} height={256}/>
-                  </GalleryLink>
-                </GalleryListItem>
+              ))}
             </GalleryList>
         </Section>
     )
 }
+
+Gallery.propTypes = {
+  galleryItems: PropTypes.arrayOf(PropTypes.object)
+};
+
 export default Gallery
