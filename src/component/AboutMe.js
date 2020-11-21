@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 
-const Section = styled.section`
+const Header = styled.header`
   display: flex;
   padding: 64px 0 0;
   margin: 0 auto;
@@ -36,7 +36,7 @@ font-weight: bold;
 
 const AboutMe = () => {
   return (
-    <Section>
+    <Header>
       <Image src={"./img/top.png"} width={503} height={503}/>
       <TextArea>
       <Title>MAAYA ASHIDA</Title>
@@ -46,7 +46,7 @@ const AboutMe = () => {
     After that, I joined Yahoo! JAPAN and became a UX designer.<br></br>
     I design UI/ UX to make the future better.</Text>
       </TextArea>
-    </Section>
+    </Header>
   )
 }
 
