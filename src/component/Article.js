@@ -17,7 +17,7 @@ const ArticleItem = styled.article`
   margin-top: 32px;
   overflow: hidden;
   border-radius: 16px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 `
 const ArticleLink = styled.a`
   display: flex;
