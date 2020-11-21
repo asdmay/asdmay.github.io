@@ -24,8 +24,8 @@ const GalleryList = styled.ul`
   width: 100%;
 `
 const GalleryListItem = styled.li`
-margin-bottom: 64px;
-margin-right: 64px;
+  margin-bottom: 64px;
+  margin-right: 64px;
   :nth-child(3n){
     margin-right: 0;
   }

@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import Profile from './component/org/Profile.js';
-import Works from './component/org/Works';
-import Img from './component/atom/Img.js';
-import Header from './component/mls/Header.js';
-import Footer from './component/mls/Footer.js';
+import Footer from './component/Footer.js';
 import AboutMe from "./component/AboutMe.js";
 import Article from "./component/Article.js";
 import Gallery from "./component/Gallery.js";
+import SNS from "./component/SNS.js";
+
 
 
 class App extends Component {
@@ -17,10 +15,7 @@ class App extends Component {
         <Article />
         <Gallery />
         <Article />
-        <Header />
-        <Img src={"./img/top.png"} alt={"top"}/>
-        <Profile />
-        <Works />
+        <SNS />
         <Footer />
       </div>
     );

@@ -20,7 +20,7 @@ const Image = styled.img`
 const TextArea = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
   max-width: 50%;
   padding-left: 32px;
 `
