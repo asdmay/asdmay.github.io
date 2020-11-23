@@ -1,9 +1,17 @@
 import React from "react";
-import Footer from "./component/Footer.js";
-import AboutMe from "./component/AboutMe.js";
-import Article from "./component/Article.js";
-import Gallery from "./component/Gallery.js";
-import SNS from "./component/SNS.js";
+import MediaQuery from "react-responsive";
+
+import AboutMePC from "./component/pc/AboutMe.js";
+import ArticlePC from "./component/pc/Article.js";
+import GalleryPC from "./component/pc/Gallery.js";
+import SNSPC from "./component/pc/SNS.js";
+import FooterPC from "./component/pc/Footer.js";
+
+import AboutMeSP from "./component/sp/AboutMe.js";
+import ArticleSP from "./component/sp/Article.js";
+import GallerySP from "./component/sp/Gallery.js";
+import SNSSP from "./component/sp/SNS.js";
+import FooterSP from "./component/sp/Footer.js";
 
 const App = () => {
   const articleItems = [
@@ -21,7 +29,8 @@ const App = () => {
       link: "https://store.line.me/stickershop/product/7154677/ja",
       image: "./img/omochiguma.png",
       title: "Omochiguma's Sticker",
-      text: "Omochiguma is a bear like a rice cake. Useful Japanese phrases in our daily life."
+      text:
+        "Omochiguma is a bear like a rice cake. Useful Japanese phrases in our daily life."
     },
     {
       link: "https://store.line.me/stickershop/product/1333908/ja",
@@ -32,39 +41,55 @@ const App = () => {
   ];
   const galleryItems = [
     {
-      link: "https://www.instagram.com/p/CHncP4DDBHk/?utm_source=ig_web_copy_link",
+      link:
+        "https://www.instagram.com/p/CHncP4DDBHk/?utm_source=ig_web_copy_link",
       image: "./img/omochiguma_01.png"
     },
     {
-      link: "https://www.instagram.com/p/CECOKcLDqge/?utm_source=ig_web_copy_link",
+      link:
+        "https://www.instagram.com/p/CECOKcLDqge/?utm_source=ig_web_copy_link",
       image: "./img/omochiguma_02.png"
     },
     {
-      link: "https://www.instagram.com/p/CGxRbMpDRAh/?utm_source=ig_web_copy_link",
+      link:
+        "https://www.instagram.com/p/CGxRbMpDRAh/?utm_source=ig_web_copy_link",
       image: "./img/omochiguma_03.png"
     },
     {
-      link: "https://www.instagram.com/p/CEmGTd0jkCD/?utm_source=ig_web_copy_link",
+      link:
+        "https://www.instagram.com/p/CEmGTd0jkCD/?utm_source=ig_web_copy_link",
       image: "./img/omochiguma_04.png"
     },
     {
-      link: "https://www.instagram.com/p/BykxbaTDLsa/?utm_source=ig_web_copy_link",
+      link:
+        "https://www.instagram.com/p/BykxbaTDLsa/?utm_source=ig_web_copy_link",
       image: "./img/omochiguma_05.png"
     },
     {
-      link: "https://www.instagram.com/p/Bxpi11tHsjc/?utm_source=ig_web_copy_link",
+      link:
+        "https://www.instagram.com/p/Bxpi11tHsjc/?utm_source=ig_web_copy_link",
       image: "./img/omochiguma_06.png"
     }
-  ]
+  ];
 
   return (
     <div className="App">
-      <AboutMe />
-      <Article articleItems={articleItems}>Article</Article>
-      <Gallery galleryItems={galleryItems}/>
-      <Article articleItems={lineStampItems}>LINE Stamp</Article>
-      <SNS />
-      <Footer />
+      <MediaQuery query="(min-width: 767px)">
+        <AboutMePC />
+        <ArticlePC articleItems={articleItems}>Article</ArticlePC>
+        <GalleryPC galleryItems={galleryItems} />
+        <ArticlePC articleItems={lineStampItems}>LINE Stamp</ArticlePC>
+        <SNSPC />
+        <FooterPC />
+      </MediaQuery>
+      <MediaQuery query="(max-width: 767px)">
+        <AboutMeSP />
+        <ArticleSP articleItems={articleItems}>Article</ArticleSP>
+        <GallerySP galleryItems={galleryItems} />
+        <ArticleSP articleItems={lineStampItems}>LINE Stamp</ArticleSP>
+        <SNSSP />
+        <FooterSP />
+      </MediaQuery>
     </div>
   );
 };
