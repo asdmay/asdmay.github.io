@@ -7,10 +7,10 @@ const Section = styled.section`
   width: 320px;
 `;
 const Title = styled.h1`
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   color: rgba(0, 0, 0, 0.9);
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 `;
 const ArticleList = styled.ul``;
 
