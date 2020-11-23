@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 const Header = styled.header`
   display: flex;
+  justify-content: center;
   padding: 64px 0 0;
   margin: 0 auto;
   width: 1024px;
@@ -22,7 +23,7 @@ const TextArea = styled.div`
   flex-direction: column;
   justify-content: center;
   max-width: 50%;
-  padding-left: 32px;
+  padding-left: 64px;
 `
 
 const Text = styled.p`
@@ -37,7 +38,7 @@ font-weight: bold;
 const AboutMe = () => {
   return (
     <Header>
-      <Image src={"./img/top.png"} width={503} height={503}/>
+      <Image src={"./img/top.jpg"} width={300} height={300}/>
       <TextArea>
       <Title>MAAYA ASHIDA</Title>
       <BoldText>“ I like to solve problems by designing. “</BoldText>
