@@ -43,7 +43,7 @@ const AboutMe = () => {
       <Image src={"./img/top.jpg"} width={200} height={200}/>
       <TextArea>
         <Title>MAAYA ASHIDA</Title>
-        <BoldText>“ I design UI/ UX to make the future better. “</BoldText>
+        <BoldText>“ I design UI/ UX to make a better future. “</BoldText>
         <Text>I’m MAAYA.<br></br>
     When I was a student, I majored in Interaction Design and Information Compilation.<br></br>
     After that, I joined Yahoo! JAPAN and became a UX designer.
