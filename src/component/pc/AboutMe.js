@@ -40,12 +40,11 @@ const AboutMe = () => {
     <Header>
       <Image src={"./img/top.jpg"} width={300} height={300}/>
       <TextArea>
-      <Title>MAAYA ASHIDA</Title>
-      <BoldText>“ I like to solve problems by designing. “</BoldText>
-      <Text>I’m MAAYA.<br></br>
+        <Title>MAAYA ASHIDA</Title>
+        <BoldText>“ I design UI/ UX to make the future better. “</BoldText>
+        <Text>I’m MAAYA.<br></br>
     When I was a student, I majored in Interaction Design and Information Compilation.<br></br>
-    After that, I joined Yahoo! JAPAN and became a UX designer.<br></br>
-    I design UI/ UX to make the future better.</Text>
+    After that, I joined Yahoo! JAPAN and became a UX designer.</Text>
       </TextArea>
     </Header>
   )
