@@ -19,24 +19,24 @@ const App = () => {
       link:
         "https://techblog.yahoo.co.jp/advent-calendar-2018/design-endearing-vui/",
       image: "./img/vui.png",
-      title: "How to design for Endearing Voice User Interface",
+      title: "愛される Voice User Interface への道のり",
       text:
-        " I tried to make VUI prototype. If you read this article, you can learn tips of VUI design."
+        "プロトタイピングから得たVUIデザインのTipsについてまとめています。"
     }
   ];
   const lineStampItems = [
     {
       link: "https://store.line.me/stickershop/product/7154677/ja",
       image: "./img/omochiguma.png",
-      title: "Omochiguma's Sticker",
+      title: "おもちぐまのスタンプ",
       text:
-        "Omochiguma is a bear like a rice cake. Useful Japanese phrases in our daily life."
+        "オリジナルキャラ「おもちぐま」のスタンプです。おもちぐまが日常会話を彩ります。"
     },
     {
       link: "https://store.line.me/stickershop/product/1333908/ja",
       image: "./img/kuma_stamp.png",
       title: "KUMA'S STICKER ~1st IMPACT~",
-      text: "This is the first LINE Stamp I made."
+      text: "はじめて作ったLINEスタンプです。"
     }
   ];
   const galleryItems = [
