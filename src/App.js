@@ -30,7 +30,7 @@ const App = () => {
       image: "./img/omochiguma.png",
       title: "おもちぐまのスタンプ",
       text:
-        "オリジナルキャラ「おもちぐま」のスタンプです。おもちぐまが日常会話を彩ります。"
+        "オリジナルキャラ「おもちぐま」のスタンプです。"
     },
     {
       link: "https://store.line.me/stickershop/product/1333908/ja",

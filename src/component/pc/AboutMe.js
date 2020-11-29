@@ -43,7 +43,7 @@ const AboutMe = () => {
       <Title>MAAYA ASHIDA</Title>
       <BoldText>“ I like to solve problems by designing. “</BoldText>
       <Text>I’m MAAYA.<br></br>
-    When I was a student, I majored in User Interaction and Information Compilation.<br></br>
+    When I was a student, I majored in Interaction Design and Information Compilation.<br></br>
     After that, I joined Yahoo! JAPAN and became a UX designer.<br></br>
     I design UI/ UX to make the future better.</Text>
       </TextArea>
