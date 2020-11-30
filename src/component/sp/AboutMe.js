@@ -33,20 +33,14 @@ const Text = styled.p`
   color: rgba(0,0,0,0.9);
 `
 
-const BoldText = styled(Text)`
-font-weight: bold;
-`
-
 const AboutMe = () => {
   return (
     <Header>
       <Image src={"./img/top.jpg"} width={200} height={200}/>
       <TextArea>
         <Title>MAAYA ASHIDA</Title>
-        <BoldText>“ I design UI/UX to make a better future. “</BoldText>
-        <Text>When I was a student, I majored in Interaction Design and Information Compilation.<br></br>
-    After that, I joined Yahoo! JAPAN and became a UX designer.
-        </Text>
+        <Text> UI/UX designer in  Yahoo Japan Corporation.<br></br>
+     I majored in Interaction Design and Information Compilation at Kansai University.</Text>
       </TextArea>
     </Header>
   )
