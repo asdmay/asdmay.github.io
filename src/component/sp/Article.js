@@ -7,9 +7,10 @@ const Section = styled.section`
   width: 320px;
 `;
 const Title = styled.h1`
-  font-size: 2.0rem;
+  font-size: 1.6rem;
   color: rgba(0, 0, 0, 0.9);
   text-align: center;
+  margin-top: 32px;
   margin-bottom: 16px;
 `;
 const ArticleList = styled.ul``;
@@ -24,26 +25,31 @@ const ArticleListItem = styled.li`
 `;
 const ArticleLink = styled.a`
   display: flex;
-  flex-flow: column;
   width: 100%;
 `;
 
 const ArticleText = styled.p`
-  font-size: 1.3rem;
+  font-size: 0.9rem;
   color: rgba(0, 0, 0, 0.9);
   overflow-wrap: break-word;
 `;
 const ArticleTitle = styled.h2`
-  font-size: 1.3rem;
+  font-size: 1.0rem;
   color: rgba(0, 0, 0, 0.9);
   font-weight: bold;
 `;
 
-const ArticleImage = styled.img``;
+const ArticleImage = styled.img`
+  margin: 12px;
+  border-radius: 8px;
+`;
 const TextArea = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 16px 16px;
+  padding-top: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+
 `;
 
 const Article = props => {
@@ -57,7 +63,7 @@ const Article = props => {
         {props.articleItems.map((item, number) => (
           <ArticleListItem number={number} key={number.toString()}>
             <ArticleLink href={item.link}>
-              <ArticleImage src={item.image} width={320} height={232} />
+              <ArticleImage src={item.image} width={120} height={87} />
               <TextArea>
                 <ArticleTitle>{item.title}</ArticleTitle>
                 <ArticleText>{item.text}</ArticleText>
