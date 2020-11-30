@@ -3,14 +3,14 @@ import styled from 'styled-components';
 import PropTypes from "prop-types";
 
 const Section = styled.section`
-  padding: 16px 0;
   margin: 0 auto;
   width: 320px;
 `
 const Title = styled.h1`
-  font-size: 2.0rem;
+  font-size: 1.6rem;
   color: rgba(0,0,0,0.9);
   text-align: center;
+  margin-top: 32px;
   margin-bottom: 16px;
 `
 const GalleryImage = styled.img`
@@ -26,12 +26,13 @@ const GalleryLink = styled.a`
 const GalleryList = styled.ul`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
 `
 const GalleryListItem = styled.li`
   margin-bottom: 8px;
   margin-right: 8px;
-  :nth-child(2n){
+  :nth-child(3n){
     margin-right: 0;
   }
 `
@@ -47,7 +48,7 @@ const Gallery = props => {
               {props.galleryItems.map((item, number) => (
                 <GalleryListItem number={number} key={number.toString()}>
                   <GalleryLink href={item.link}>
-                    <GalleryImage src={item.image} width={156} height={156}/>
+                    <GalleryImage src={item.image} width={96} height={96}/>
                   </GalleryLink>
                 </GalleryListItem>
               ))}
