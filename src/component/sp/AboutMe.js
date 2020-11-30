@@ -39,7 +39,7 @@ const AboutMe = () => {
       <Image src={"./img/top.jpg"} width={200} height={200}/>
       <TextArea>
         <Title>MAAYA ASHIDA</Title>
-        <Text> UI/UX designer in  Yahoo Japan Corporation.<br></br>
+        <Text> UI/UX designer in Yahoo Japan Corporation.<br></br>
      I majored in Interaction Design and Information Compilation at Kansai University.</Text>
       </TextArea>
     </Header>
