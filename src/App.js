@@ -17,6 +17,14 @@ const App = () => {
   const articleItems = [
     {
       link:
+        "https://techblog.yahoo.co.jp/entry/2020120530052930/",
+      image: "./img/techblog2020.png",
+      title: "スマホWeb版 Yahoo! JAPANトップページ デザインシステム導入",
+      text:
+        "デザインシステムを導入した経緯や手法について書いています。"
+    },
+    {
+      link:
         "https://techblog.yahoo.co.jp/advent-calendar-2018/design-endearing-vui/",
       image: "./img/vui.png",
       title: "愛される Voice User Interface への道のり",
