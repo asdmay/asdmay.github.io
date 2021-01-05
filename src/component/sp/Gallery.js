@@ -19,9 +19,9 @@ const Title = styled.h1`
 const GalleryImage = styled.img`
   padding: 4px;
   border-radius: 16px;
-  box-shadow: 2px 2px 4px #afd1e6, -2px -2px 4px #d5ffff;
+  box-shadow:  2px 2px 3px #DDE2E6, -2px -2px 3px #ffffff;
   @media (prefers-color-scheme: dark) {
-    box-shadow: 2px 2px 4px #2B343A, -2px -2px 4px #354046;
+    box-shadow:  2px 2px 3px #1E2529, -2px -2px 3px #354046;
   }
   vertical-align: bottom;
 `
