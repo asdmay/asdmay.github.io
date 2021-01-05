@@ -19,7 +19,7 @@ const Title = styled.h1`
 const GalleryImage = styled.img`
   padding: 16px;
   border-radius: 24px;
-  box-shadow: 4px 4px 16px #afd1e6, -4px -4px 16px #d5ffff;
+  box-shadow: 4px 4px 8px #afd1e6, -4px -4px 8px #d5ffff;
   @media (prefers-color-scheme: dark) {
     box-shadow:  4px 4px 8px #2B343A, -4px -4px 8px #354046;
   }

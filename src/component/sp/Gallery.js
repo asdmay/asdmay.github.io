@@ -17,10 +17,11 @@ const Title = styled.h1`
   margin-bottom: 16px;
 `
 const GalleryImage = styled.img`
+  padding: 4px;
   border-radius: 16px;
-  box-shadow: 4px 4px 16px #afd1e6, -4px -4px 16px #d5ffff;
+  box-shadow: 2px 2px 4px #afd1e6, -2px -2px 4px #d5ffff;
   @media (prefers-color-scheme: dark) {
-    box-shadow:  4px 4px 8px #2B343A, -4px -4px 8px #354046;
+    box-shadow: 2px 2px 4px #2B343A, -2px -2px 4px #354046;
   }
   vertical-align: bottom;
 `
