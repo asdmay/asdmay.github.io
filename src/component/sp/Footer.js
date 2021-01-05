@@ -7,6 +7,10 @@ const FooterArea = styled.footer`
   margin: 0 auto;
   width: 320px;
   text-align: center;
+  color: rgba(0, 0, 0, 0.9);
+  @media (prefers-color-scheme: dark) {
+    color: rgba(255, 255, 255, 0.9);
+  }
 `
 
 const Footer= () => {

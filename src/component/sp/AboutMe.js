@@ -13,11 +13,14 @@ const Header = styled.header`
 const Title = styled.h1`
   font-size: 1.6rem;
   color: rgba(0,0,0,0.9);
+  @media (prefers-color-scheme: dark) {
+    color: rgba(255, 255, 255, 0.9);
+  }
   text-align: center;
 `
 
 const Image = styled.img`
-  border-radius: 260px;
+  border-radius: 32px;
   margin: 0 auto 8px;
 `
 
@@ -31,6 +34,9 @@ const TextArea = styled.div`
 const Text = styled.p`
   font-size: 0.9rem;
   color: rgba(0,0,0,0.9);
+  @media (prefers-color-scheme: dark) {
+    color: rgba(255, 255, 255, 0.9);
+  }
 `
 
 const AboutMe = () => {

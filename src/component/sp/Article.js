@@ -9,6 +9,9 @@ const Section = styled.section`
 const Title = styled.h1`
   font-size: 1.6rem;
   color: rgba(0, 0, 0, 0.9);
+  @media (prefers-color-scheme: dark) {
+    color: rgba(255, 255, 255, 0.9);
+  }
   text-align: center;
   margin-top: 32px;
   margin-bottom: 16px;
@@ -19,7 +22,10 @@ const ArticleListItem = styled.li`
   margin-top: 16px;
   overflow: hidden;
   border-radius: 16px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  box-shadow:  4px 4px 8px #afd1e6, -4px -4px 8px #d5ffff;
+  @media (prefers-color-scheme: dark) {
+    box-shadow:  4px 4px 8px #2B343A, -4px -4px 8px #354046;
+  }
   display: flex;
   flex-flow: column;
 `;
@@ -31,11 +37,17 @@ const ArticleLink = styled.a`
 const ArticleText = styled.p`
   font-size: 0.9rem;
   color: rgba(0, 0, 0, 0.9);
+  @media (prefers-color-scheme: dark) {
+    color: rgba(255, 255, 255, 0.9);
+  }
   overflow-wrap: break-word;
 `;
 const ArticleTitle = styled.h2`
   font-size: 1.0rem;
   color: rgba(0, 0, 0, 0.9);
+  @media (prefers-color-scheme: dark) {
+    color: rgba(255, 255, 255, 0.9);
+  }
   font-weight: bold;
 `;
 

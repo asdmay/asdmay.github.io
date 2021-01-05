@@ -9,13 +9,19 @@ const Section = styled.section`
 const Title = styled.h1`
   font-size: 1.6rem;
   color: rgba(0,0,0,0.9);
+  @media (prefers-color-scheme: dark) {
+    color: rgba(255, 255, 255, 0.9);
+  }
   text-align: center;
   margin-top: 32px;
   margin-bottom: 16px;
 `
 const GalleryImage = styled.img`
   border-radius: 16px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 4px 4px 16px #afd1e6, -4px -4px 16px #d5ffff;
+  @media (prefers-color-scheme: dark) {
+    box-shadow:  4px 4px 8px #2B343A, -4px -4px 8px #354046;
+  }
   vertical-align: bottom;
 `
 const GalleryLink = styled.a`
