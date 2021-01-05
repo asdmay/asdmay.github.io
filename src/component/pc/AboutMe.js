@@ -16,6 +16,7 @@ const Title = styled.h1`
 
 const Image = styled.img`
   border-radius: 64px;
+  mix-blend-mode: multiply;
 `
 
 const TextArea = styled.div`
