@@ -20,7 +20,7 @@ const ArticleListItem = styled.li`
   overflow: hidden;
   border-radius: 16px;
   background: #c2e8ff;
-  box-shadow:  8px 8px 8px #afd1e6, -8px -8px 8px #d5ffff;
+  box-shadow:  4px 4px 8px #afd1e6, -4px -4px 8px #d5ffff;
   /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);*/
 `;
 const ArticleLink = styled.a`

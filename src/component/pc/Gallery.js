@@ -17,7 +17,7 @@ const GalleryImage = styled.img`
   padding: 16px;
   border-radius: 24px;
   background: #c2e8ff;
-  box-shadow:  8px 8px 8px #afd1e6, -8px -8px 8px #d5ffff;
+  box-shadow: 4px 4px 16px #afd1e6, -4px -4px 16px #d5ffff;
 `
 const GalleryLink = styled.a`
 `
