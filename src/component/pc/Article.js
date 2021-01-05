@@ -22,9 +22,9 @@ const ArticleListItem = styled.li`
   margin-top: 32px;
   overflow: hidden;
   border-radius: 16px;
-  box-shadow:  4px 4px 8px #afd1e6, -4px -4px 8px #d5ffff;
+  box-shadow:  8px 8px 10px #DDE2E6, -8px -8px 10px #ffffff;
   @media (prefers-color-scheme: dark) {
-    box-shadow:  4px 4px 8px #2B343A, -4px -4px 8px #354046;
+    box-shadow:  8px 8px 10px #1E2529, -8px -8px 10px #354046;
   }
 `;
 
