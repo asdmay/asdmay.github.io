@@ -6,10 +6,13 @@ const Section = styled.section`
   padding: 64px 64px 0;
   margin: 0 auto;
   width: 1024px;
+  color: rgba(0, 0, 0, 0.9);
+  @media (prefers-color-scheme: dark) {
+    color: rgba(255, 255, 255, 0.9);
+  }
 `;
 const Title = styled.h1`
   font-size: 2.5rem;
-  color: rgba(0, 0, 0, 0.9);
   text-align: center;
   margin-bottom: 64px;
 `;
@@ -19,23 +22,31 @@ const ArticleListItem = styled.li`
   margin-top: 32px;
   overflow: hidden;
   border-radius: 16px;
-  background: #c2e8ff;
   box-shadow:  4px 4px 8px #afd1e6, -4px -4px 8px #d5ffff;
-  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);*/
+  @media (prefers-color-scheme: dark) {
+    box-shadow:  4px 4px 8px #2B343A, -4px -4px 8px #354046;
+  }
 `;
+
 const ArticleLink = styled.a`
   display: flex;
   width: 100%;
 `;
 
 const ArticleText = styled.p`
-  font-size: 1.3rem;
   color: rgba(0, 0, 0, 0.9);
+  @media (prefers-color-scheme: dark) {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  font-size: 1.3rem;
   overflow-wrap: break-word;
 `;
 const ArticleTitle = styled.h2`
-  font-size: 1.3rem;
   color: rgba(0, 0, 0, 0.9);
+  @media (prefers-color-scheme: dark) {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  font-size: 1.3rem;
   font-weight: bold;
 `;
 
