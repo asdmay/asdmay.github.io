@@ -8,12 +8,21 @@ const Section = styled.section`
 const Title = styled.h1`
   font-size: 1.6rem;
   color: rgba(0,0,0,0.9);
+  @media (prefers-color-scheme: dark) {
+    color: rgba(255, 255, 255, 0.9);
+  }
   text-align: center;
   margin-top: 32px;
   margin-bottom: 16px;
 `
 
 const SNSImage = styled.img`
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow:  2px 2px 4px #afd1e6, -2px -2px 4px #d5ffff;
+  @media (prefers-color-scheme: dark) {
+    box-shadow:  2px 2px 4px #2B343A, -2px -2px 4px #354046;
+  }
 `
 
 const SNSLink = styled.a`
