@@ -14,8 +14,10 @@ const Title = styled.h1`
   margin-bottom: 64px;
 `
 const GalleryImage = styled.img`
-  border-radius: 16px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  border-radius: 24px;
+  background: #c2e8ff;
+  box-shadow:  8px 8px 8px #afd1e6, -8px -8px 8px #d5ffff;
 `
 const GalleryLink = styled.a`
 `
@@ -43,7 +45,7 @@ const Gallery = props => {
               {props.galleryItems.map((item, number) => (
                 <GalleryListItem number={number} key={number.toString()}>
                   <GalleryLink href={item.link}>
-                    <GalleryImage src={item.image} width={256} height={256}/>
+                    <GalleryImage src={item.image} width={240} height={240}/>
                   </GalleryLink>
                 </GalleryListItem>
               ))}

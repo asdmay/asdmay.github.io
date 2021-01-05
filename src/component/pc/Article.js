@@ -19,7 +19,9 @@ const ArticleListItem = styled.li`
   margin-top: 32px;
   overflow: hidden;
   border-radius: 16px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  background: #c2e8ff;
+  box-shadow:  8px 8px 8px #afd1e6, -8px -8px 8px #d5ffff;
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);*/
 `;
 const ArticleLink = styled.a`
   display: flex;
@@ -37,12 +39,16 @@ const ArticleTitle = styled.h2`
   font-weight: bold;
 `;
 
-const ArticleImage = styled.img``;
+const ArticleImage = styled.img`
+padding: 16px;
+border-radius: 24px;
+`;
 const TextArea = styled.div`
+  flex: 1;
   display: flex;
   flex-direction: column;
   min-width: 50%;
-  padding: 16px 32px;
+  padding: 16px;
 `;
 
 const Article = props => {

@@ -15,7 +15,7 @@ const Title = styled.h1`
 `
 
 const Image = styled.img`
-  border-radius: 260px;
+  border-radius: 64px;
 `
 
 const TextArea = styled.div`

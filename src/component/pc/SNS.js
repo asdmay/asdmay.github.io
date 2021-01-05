@@ -14,9 +14,14 @@ const Title = styled.h1`
 `
 
 const SNSImage = styled.img`
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow:  8px 8px 8px #afd1e6, -8px -8px 8px #d5ffff;
 `
 
 const SNSLink = styled.a`
+  width: 100%;
+  height: 100%;
 `
 
 const SNSList = styled.ul`
