@@ -16,6 +16,12 @@ import FooterSP from "./component/sp/Footer.js";
 const App = () => {
   const articleItems = [
     {
+      link: "https://youtu.be/i9ibnwtrRbE",
+      image: "./img/yjtc2021.png",
+      title: "スマホ Web 版トップページの事例で学ぶ デザインシステム導入の過程で意識すべきポイント",
+      text: "Yahoo! JAPAN Tech Confernece 2021に登壇しました。"
+    },
+    {
       link:
         "https://techblog.yahoo.co.jp/entry/2020120530052930/",
       image: "./img/techblog2020.png",

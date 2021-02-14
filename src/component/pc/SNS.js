@@ -45,7 +45,7 @@ const SNSListItem = styled.li`
 const SNS = () => {
     return (
         <Section>
-            <Title>SNS</Title>
+            <Title>Follow Me</Title>
             <SNSList>
                 <SNSListItem>
                     <SNSLink href={"https://twitter.com/pntgn09"}>

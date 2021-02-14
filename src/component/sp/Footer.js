@@ -16,7 +16,7 @@ const FooterArea = styled.footer`
 const Footer= () => {
   return (
     <FooterArea>
-      (c)1993-2020 MAAYA ASHIDA
+      (c)1993-2021 MAAYA ASHIDA
     </FooterArea>
   )
 }
