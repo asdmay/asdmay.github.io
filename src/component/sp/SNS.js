@@ -43,7 +43,7 @@ const SNSListItem = styled.li`
 const SNS = () => {
     return (
         <Section>
-            <Title>SNS</Title>
+            <Title>Follow Me</Title>
             <SNSList>
                 <SNSListItem>
                     <SNSLink href={"https://twitter.com/pntgn09"}>
@@ -53,6 +53,11 @@ const SNS = () => {
                 <SNSListItem>
                     <SNSLink href={"https://www.instagram.com/maaya_ashida/"}>
                     <SNSImage src={"./img/Instagram.png"} width={32} height={32} />
+                    </SNSLink>
+                </SNSListItem>
+                <SNSListItem>
+                    <SNSLink href={"https://note.com/mashida"}>
+                    <SNSImage src={"./img/Note.png"} width={32} height={32} />
                     </SNSLink>
                 </SNSListItem>
             </SNSList>
