@@ -55,6 +55,11 @@ const SNS = () => {
                     <SNSImage src={"./img/Instagram.png"} width={32} height={32} />
                     </SNSLink>
                 </SNSListItem>
+                <SNSListItem>
+                    <SNSLink href={"https://note.com/mashida"}>
+                    <SNSImage src={"./img/Note.png"} width={32} height={32} />
+                    </SNSLink>
+                </SNSListItem>
             </SNSList>
         </Section>
     )

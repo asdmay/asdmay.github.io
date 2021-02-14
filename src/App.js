@@ -14,13 +14,23 @@ import SNSSP from "./component/sp/SNS.js";
 import FooterSP from "./component/sp/Footer.js";
 
 const App = () => {
-  const articleItems = [
+
+  const newsItems = [
+    {
+      link: "https://rakus.connpass.com/event/200838/",
+      image: "./img/210209LT.png",
+      title: "UI/UXのトレンド（2020年／2021年）LT会",
+      text: "2020~2021年のUIデザイントレンドのNeumorphismについてLTしました。"
+    },
     {
       link: "https://youtu.be/i9ibnwtrRbE",
       image: "./img/yjtc2021.png",
       title: "スマホ Web 版トップページの事例で学ぶ デザインシステム導入の過程で意識すべきポイント",
       text: "Yahoo! JAPAN Tech Confernece 2021に登壇しました。"
     },
+  ]
+
+  const articleItems = [
     {
       link:
         "https://techblog.yahoo.co.jp/entry/2020120530052930/",
@@ -90,6 +100,7 @@ const App = () => {
     <div className="App">
       <MediaQuery query="(min-width: 767px)">
         <AboutMePC />
+        <ArticlePC articleItems={newsItems}>News</ArticlePC>
         <ArticlePC articleItems={articleItems}>Article</ArticlePC>
         <GalleryPC galleryItems={galleryItems} />
         <ArticlePC articleItems={lineStampItems}>LINE Stamp</ArticlePC>
@@ -98,6 +109,7 @@ const App = () => {
       </MediaQuery>
       <MediaQuery query="(max-width: 767px)">
         <AboutMeSP />
+        <ArticleSP articleItems={newsItems}>News</ArticleSP>
         <ArticleSP articleItems={articleItems}>Article</ArticleSP>
         <GallerySP galleryItems={galleryItems} />
         <ArticleSP articleItems={lineStampItems}>LINE Stamp</ArticleSP>
