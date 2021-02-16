@@ -4,13 +4,12 @@ import MediaQuery from "react-responsive";
 import AboutMePC from "./component/pc/AboutMe.js";
 import ArticlePC from "./component/pc/Article.js";
 import GalleryPC from "./component/pc/Gallery.js";
-import SNSPC from "./component/pc/SNS.js";
+import SNS from "./component/pc/SNS.js";
 import FooterPC from "./component/pc/Footer.js";
 
 import AboutMeSP from "./component/sp/AboutMe.js";
 import ArticleSP from "./component/sp/Article.js";
 import GallerySP from "./component/sp/Gallery.js";
-import SNSSP from "./component/sp/SNS.js";
 import FooterSP from "./component/sp/Footer.js";
 
 const App = () => {
@@ -96,6 +95,9 @@ const App = () => {
     }
   ];
 
+  const isPC = window.matchMedia('(min-width: 767px)').matches
+  console.log(isPC)
+
   return (
     <div className="App">
       <MediaQuery query="(min-width: 767px)">
@@ -104,7 +106,7 @@ const App = () => {
         <ArticlePC articleItems={articleItems}>Article</ArticlePC>
         <GalleryPC galleryItems={galleryItems} />
         <ArticlePC articleItems={lineStampItems}>LINE Stamp</ArticlePC>
-        <SNSPC />
+        <SNS pc={isPC}/>
         <FooterPC />
       </MediaQuery>
       <MediaQuery query="(max-width: 767px)">
@@ -113,7 +115,7 @@ const App = () => {
         <ArticleSP articleItems={articleItems}>Article</ArticleSP>
         <GallerySP galleryItems={galleryItems} />
         <ArticleSP articleItems={lineStampItems}>LINE Stamp</ArticleSP>
-        <SNSSP />
+        <SNS />
         <FooterSP />
       </MediaQuery>
     </div>
