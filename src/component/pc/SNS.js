@@ -1,34 +1,50 @@
 import React from 'react';
 import styled from 'styled-components';
-import PropTypes from "prop-types";
+import { DeviceSize } from '../../DeviceSize'
 
 const Section = styled.section`
   margin: 0 auto;
-  padding-top: ${props => props.pc && 64}px;
-  padding-right:${props => props.pc && 0};
-  padding-bottom:${props => props.pc && 64}px;
-  padding-left:${props => props.pc && 0};
-  width: ${props => props.pc ? 1024 : 320}px;
+  @media ${DeviceSize.sp} {
+    width: 320px;
+  }
+  @media ${DeviceSize.pc} {
+    padding: 64px 0;
+    width: 1024px;
+  }
 `
 const Title = styled.h1`
-  font-size: ${props => props.pc ? 2.5 : 1.6}rem;
   color: rgba(0, 0, 0, 0.9);
+  text-align: center;
   @media (prefers-color-scheme: dark) {
     color: rgba(255, 255, 255, 0.9);
   }
-  text-align: center;
-  margin-top: ${props => !props.pc && 32}px;
-  margin-bottom: ${props => props.pc ? 64 : 16}px;
+  @media ${DeviceSize.sp} {
+    margin-bottom: 16px;
+    font-size: 1.6rem;
+  }
+  @media ${DeviceSize.pc} {
+    margin-top: 32px;
+    margin-bottom: 64px;
+    font-size: 2.5rem;
+  }
 `
 
 const SNSImage = styled.img`
-  padding: ${props => props.pc ? 16 : 8}px;
-  border-radius: ${props => props.pc ? 16 : 8}px;
-  box-shadow: ${props => props.pc ? 8 : 2}px ${props => props.pc ? 8 : 2}px ${props => props.pc ? 10 : 3}px #DDE2E6,
-  ${props => props.pc ? -8 : -2}px ${props => props.pc ? -8 : -2}px ${props => props.pc ? 10 : 3}px #ffffff;
-  @media (prefers-color-scheme: dark) {
-  box-shadow: ${props => props.pc ? 8 : 2}px ${props => props.pc ? 8 : 2}px ${props => props.pc ? 10 : 3}px #1E2529,
-  ${props => props.pc ? -8 : -2}px ${props => props.pc ? -8 : -2}px ${props => props.pc ? 10 : 3}px #354046;
+  @media ${DeviceSize.sp} {
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px #DDE2E6, -2px -2px 3px #ffffff;
+    @media (prefers-color-scheme: dark) {
+      box-shadow: 2px 2px 3px #1E2529, -2px -2px 3px #354046;
+    }
+  }
+  @media ${DeviceSize.pc} {
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 8px 8px 10px #DDE2E6, -8px -8px 10px #ffffff;
+    @media (prefers-color-scheme: dark) {
+      box-shadow : 8px 8px 10px #1E2529, -8px -8px 10px #354046;
+    }
   }
 `
 
@@ -43,41 +59,42 @@ const SNSList = styled.ul`
   width: 100%;
 `
 const SNSListItem = styled.li`
-  margin-right: ${props => props.pc ? 64 : 48}px;
+  @media ${DeviceSize.sp} {
+    margin-right: 48px;
+  }
+  @media ${DeviceSize.pc} {
+    margin-right: 64px;
+  }
   :last-child {
     margin-right: 0;
   }
 `
 
-const SNS = props => {
-  console.log(props.pc)
-  const snsImageLength = props.pc ? 64 : 32;
+const SNS = () => {
+  const isPC = window.matchMedia('(min-width: 767px)').matches
+  const snsImageLength = isPC ? 64 : 32;
     return (
-        <Section pc={props.pc} >
-            <Title pc={props.pc}>Follow Me</Title>
-            <SNSList pc={props.pc}>
-                <SNSListItem pc={props.pc}>
-                    <SNSLink pc={props.pc} href={"https://twitter.com/pntgn09"}>
-                    <SNSImage pc={props.pc} src={"./img/Twitter.png"} width={snsImageLength} height={snsImageLength} />
+        <Section >
+            <Title>Follow Me</Title>
+            <SNSList>
+                <SNSListItem>
+                    <SNSLink href={"https://twitter.com/pntgn09"}>
+                    <SNSImage src={"./img/Twitter.png"} width={snsImageLength} height={snsImageLength} />
                     </SNSLink>
                 </SNSListItem>
-                <SNSListItem pc={props.pc}>
-                    <SNSLink pc={props.pc} href={"https://www.instagram.com/maaya_ashida/"}>
-                    <SNSImage pc={props.pc} src={"./img/Instagram.png"} width={snsImageLength} height={snsImageLength} />
+                <SNSListItem>
+                    <SNSLink href={"https://www.instagram.com/maaya_ashida/"}>
+                    <SNSImage src={"./img/Instagram.png"} width={snsImageLength} height={snsImageLength} />
                     </SNSLink>
                 </SNSListItem>
-                <SNSListItem pc={props.pc}>
-                    <SNSLink pc={props.pc} href={"https://note.com/mashida"}>
-                    <SNSImage pc={props.pc} src={"./img/Note.png"} width={snsImageLength} height={snsImageLength} />
+                <SNSListItem>
+                    <SNSLink href={"https://note.com/mashida"}>
+                    <SNSImage src={"./img/Note.png"} width={snsImageLength} height={snsImageLength} />
                     </SNSLink>
                 </SNSListItem>
             </SNSList>
         </Section>
     )
 }
-
-SNS.propTypes = {
-  pc: PropTypes.boolean,
-};
 
 export default SNS

@@ -1,16 +1,10 @@
 import React from "react";
-import MediaQuery from "react-responsive";
 
 import AboutMePC from "./component/pc/AboutMe.js";
 import ArticlePC from "./component/pc/Article.js";
 import GalleryPC from "./component/pc/Gallery.js";
 import SNS from "./component/pc/SNS.js";
 import FooterPC from "./component/pc/Footer.js";
-
-import AboutMeSP from "./component/sp/AboutMe.js";
-import ArticleSP from "./component/sp/Article.js";
-import GallerySP from "./component/sp/Gallery.js";
-import FooterSP from "./component/sp/Footer.js";
 
 const App = () => {
 
@@ -95,29 +89,15 @@ const App = () => {
     }
   ];
 
-  const isPC = window.matchMedia('(min-width: 767px)').matches
-  console.log(isPC)
-
   return (
     <div className="App">
-      <MediaQuery query="(min-width: 767px)">
         <AboutMePC />
         <ArticlePC articleItems={newsItems}>News</ArticlePC>
         <ArticlePC articleItems={articleItems}>Article</ArticlePC>
         <GalleryPC galleryItems={galleryItems} />
         <ArticlePC articleItems={lineStampItems}>LINE Stamp</ArticlePC>
-        <SNS pc={isPC}/>
-        <FooterPC />
-      </MediaQuery>
-      <MediaQuery query="(max-width: 767px)">
-        <AboutMeSP />
-        <ArticleSP articleItems={newsItems}>News</ArticleSP>
-        <ArticleSP articleItems={articleItems}>Article</ArticleSP>
-        <GallerySP galleryItems={galleryItems} />
-        <ArticleSP articleItems={lineStampItems}>LINE Stamp</ArticleSP>
         <SNS />
-        <FooterSP />
-      </MediaQuery>
+        <FooterPC />
     </div>
   );
 };
