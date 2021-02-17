@@ -5,6 +5,7 @@ import { DeviceSize } from '../../DeviceSize'
 const Section = styled.section`
   margin: 0 auto;
   @media ${DeviceSize.sp} {
+    padding: 32px 0;
     width: 320px;
   }
   @media ${DeviceSize.pc} {
@@ -23,7 +24,6 @@ const Title = styled.h1`
     font-size: 1.6rem;
   }
   @media ${DeviceSize.pc} {
-    margin-top: 32px;
     margin-bottom: 64px;
     font-size: 2.5rem;
   }
@@ -71,25 +71,26 @@ const SNSListItem = styled.li`
 `
 
 const SNS = () => {
-  const isPC = window.matchMedia('(min-width: 767px)').matches
-  const snsImageLength = isPC ? 64 : 32;
+  const isPC = window.matchMedia(`${DeviceSize.pc}`).matches
+  const snsImageWidth = isPC ? 64 : 32;
+  const snsImageHeight = isPC ? 64 : 32;
     return (
         <Section >
             <Title>Follow Me</Title>
             <SNSList>
                 <SNSListItem>
                     <SNSLink href={"https://twitter.com/pntgn09"}>
-                    <SNSImage src={"./img/Twitter.png"} width={snsImageLength} height={snsImageLength} />
+                    <SNSImage src={"./img/Twitter.png"} width={snsImageWidth} height={snsImageHeight} />
                     </SNSLink>
                 </SNSListItem>
                 <SNSListItem>
                     <SNSLink href={"https://www.instagram.com/maaya_ashida/"}>
-                    <SNSImage src={"./img/Instagram.png"} width={snsImageLength} height={snsImageLength} />
+                    <SNSImage src={"./img/Instagram.png"} width={snsImageWidth} height={snsImageHeight} />
                     </SNSLink>
                 </SNSListItem>
                 <SNSListItem>
                     <SNSLink href={"https://note.com/mashida"}>
-                    <SNSImage src={"./img/Note.png"} width={snsImageLength} height={snsImageLength} />
+                    <SNSImage src={"./img/Note.png"} width={snsImageWidth} height={snsImageHeight} />
                     </SNSLink>
                 </SNSListItem>
             </SNSList>

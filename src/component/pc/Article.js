@@ -1,30 +1,57 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import { DeviceSize } from '../../DeviceSize'
 
 const Section = styled.section`
-  padding: 64px 64px 0;
   margin: 0 auto;
-  width: 1024px;
   color: rgba(0, 0, 0, 0.9);
   @media (prefers-color-scheme: dark) {
     color: rgba(255, 255, 255, 0.9);
   }
+  @media ${DeviceSize.sp}{
+    padding: 32px 0 0;
+    width: 320px;
+  }
+  @media ${DeviceSize.pc}{
+    padding: 64px 64px 0;
+    width: 1024px;
+  }
 `;
+
 const Title = styled.h1`
-  font-size: 2.5rem;
   text-align: center;
-  margin-bottom: 64px;
+  @media ${DeviceSize.sp}{
+    margin-bottom: 16px;
+    font-size: 1.6rem;
+  }
+  @media ${DeviceSize.pc}{
+    margin-top: 0;
+    margin-bottom: 64px;
+    font-size: 2.5rem;
+  }
 `;
 const ArticleList = styled.ul``;
 
 const ArticleListItem = styled.li`
-  margin-top: 32px;
+  display: flex;
+  flex-flow: column;
   overflow: hidden;
-  border-radius: 16px;
-  box-shadow:  8px 8px 10px #DDE2E6, -8px -8px 10px #ffffff;
-  @media (prefers-color-scheme: dark) {
-    box-shadow:  8px 8px 10px #1E2529, -8px -8px 10px #354046;
+  @media ${DeviceSize.sp}{
+    margin-top: 16px;
+    border-radius: 16px;
+    box-shadow: 2px 2px 3px #DDE2E6, -2px -2px 3px #ffffff;
+    @media (prefers-color-scheme: dark) {
+      box-shadow: 2px 2px 3px #1E2529, -2px -2px 3px #354046;
+    }
+  }
+  @media ${DeviceSize.pc}{
+    margin-top: 32px;
+    border-radius: 16px;
+    box-shadow: 8px 8px 10px #DDE2E6, -8px -8px 10px #ffffff;
+    @media (prefers-color-scheme: dark) {
+      box-shadow: 8px 8px 10px #1E2529, -8px -8px 10px #354046;
+    }
   }
 `;
 
@@ -38,34 +65,61 @@ const ArticleText = styled.p`
   @media (prefers-color-scheme: dark) {
     color: rgba(255, 255, 255, 0.9);
   }
-  font-size: 1.3rem;
   overflow-wrap: break-word;
+  @media ${DeviceSize.sp}{
+    font-size: 0.9rem;
+  }
+  @media ${DeviceSize.pc}{
+  font-size: 1.3rem;
+  }
 `;
 const ArticleTitle = styled.h2`
   color: rgba(0, 0, 0, 0.9);
   @media (prefers-color-scheme: dark) {
     color: rgba(255, 255, 255, 0.9);
   }
-  font-size: 1.3rem;
   font-weight: bold;
+  @media ${DeviceSize.sp}{
+    font-size: 1.0rem;
+  }
+  @media ${DeviceSize.pc}{
+  font-size: 1.3rem;
+  }
 `;
 
 const ArticleImage = styled.img`
-padding: 16px;
-border-radius: 24px;
+  @media ${DeviceSize.sp}{
+    margin: 12px;
+    border-radius: 8px;
+  }
+  @media ${DeviceSize.pc}{
+    padding: 16px;
+    border-radius: 24px;
+  }
+
 `;
 const TextArea = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  min-width: 50%;
-  padding: 16px;
+  @media ${DeviceSize.sp}{
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+  }
+  @media ${DeviceSize.pc}{
+    min-width: 50%;
+    padding: 16px;
+  }
 `;
 
 const Article = props => {
   if (props.articleItems.length === 0) {
     return null;
   }
+  const isPC = window.matchMedia(`${DeviceSize.pc}`).matches
+  const ArticleImageWidth = isPC ? 375 : 120;
+  const ArticleImageHeight = isPC ? 272 : 87;
   return (
     <Section>
       <Title>{props.children}</Title>
@@ -73,7 +127,7 @@ const Article = props => {
         {props.articleItems.map((item, number) => (
           <ArticleListItem number={number} key={number.toString()}>
             <ArticleLink href={item.link}>
-              <ArticleImage src={item.image} width={375} height={272} />
+              <ArticleImage src={item.image} width={ArticleImageWidth} height={ArticleImageHeight} />
               <TextArea>
                 <ArticleTitle>{item.title}</ArticleTitle>
                 <ArticleText>{item.text}</ArticleText>
