@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { DeviceSize } from '../../DeviceSize'
+import { DeviceSize } from '../DeviceSize'
 
 const Section = styled.section`
   margin: 0 auto;
@@ -80,19 +80,23 @@ const ArticleTitle = styled.h2`
   }
   font-weight: bold;
   @media ${DeviceSize.sp}{
+    margin-bottom: 4px;
     font-size: 1.0rem;
   }
   @media ${DeviceSize.pc}{
-  font-size: 1.3rem;
+    margin-bottom: 8px;
+    font-size: 1.3rem;
   }
 `;
 
 const ArticleImage = styled.img`
   @media ${DeviceSize.sp}{
     margin: 12px;
+    padding: 0;
     border-radius: 8px;
   }
   @media ${DeviceSize.pc}{
+    margin: 0;
     padding: 16px;
     border-radius: 24px;
   }

@@ -1,25 +1,25 @@
 import React from "react";
 
-import AboutMePC from "./component/pc/AboutMe.js";
-import ArticlePC from "./component/pc/Article.js";
-import GalleryPC from "./component/pc/Gallery.js";
-import SNS from "./component/pc/SNS.js";
-import FooterPC from "./component/pc/Footer.js";
+import AboutMe from "./component/AboutMe";
+import Article from "./component/Article";
+import Gallery from "./component/Gallery";
+import SNS from "./component/SNS";
+import Footer from "./component/Footer";
 
 const App = () => {
 
-  const newsItems = [
+  const eventItems = [
     {
       link: "https://rakus.connpass.com/event/200838/",
       image: "./img/210209LT.png",
-      title: "UI/UXのトレンド（2020年／2021年）LT会",
-      text: "2020~2021年のUIデザイントレンドのNeumorphismについてLTしました。"
+      title: "UI/UXのトレンド（2020年／2021年）LT会に登壇しました",
+      text: "2020~2021年のUIデザイントレンドのNeumorphismについてお話しました。"
     },
     {
       link: "https://youtu.be/i9ibnwtrRbE",
       image: "./img/yjtc2021.png",
-      title: "スマホ Web 版トップページの事例で学ぶ デザインシステム導入の過程で意識すべきポイント",
-      text: "Yahoo! JAPAN Tech Confernece 2021に登壇しました。"
+      title: "Yahoo! JAPAN Tech Confernece 2021に登壇しました。",
+      text: "「スマホ Web 版トップページの事例で学ぶ デザインシステム導入の過程で意識すべきポイント」についてお話しました"
     },
   ]
 
@@ -91,13 +91,13 @@ const App = () => {
 
   return (
     <div className="App">
-        <AboutMePC />
-        <ArticlePC articleItems={newsItems}>News</ArticlePC>
-        <ArticlePC articleItems={articleItems}>Article</ArticlePC>
-        <GalleryPC galleryItems={galleryItems} />
-        <ArticlePC articleItems={lineStampItems}>LINE Stamp</ArticlePC>
+        <AboutMe />
+        <Article articleItems={eventItems}>Event</Article>
+        <Article articleItems={articleItems}>Article</Article>
+        <Gallery galleryItems={galleryItems} />
+        <Article articleItems={lineStampItems}>LINE Stamp</Article>
         <SNS />
-        <FooterPC />
+        <Footer />
     </div>
   );
 };

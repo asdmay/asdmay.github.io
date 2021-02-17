@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { DeviceSize } from '../../DeviceSize'
+import { DeviceSize } from '../DeviceSize'
 
 const Section = styled.section`
   margin: 0 auto;
