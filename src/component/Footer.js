@@ -23,9 +23,10 @@ const FooterArea = styled.footer`
 `
 
 const Footer= () => {
+  const nowYear = new Date().getFullYear();
   return (
     <FooterArea>
-      (c)1993-2021 MAAYA ASHIDA
+      (c)1993-{nowYear} MAAYA ASHIDA
     </FooterArea>
   )
 }
