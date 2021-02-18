@@ -71,26 +71,26 @@ const SNSListItem = styled.li`
 `
 
 const SNS = () => {
-  const isPC = window.matchMedia(`${DeviceSize.pc}`).matches
-  const snsImageWidth = isPC ? 64 : 32;
-  const snsImageHeight = isPC ? 64 : 32;
+  const isDeviceSizePC = window.matchMedia(`${DeviceSize.pc}`).matches
+  const imageWidth = isDeviceSizePC ? 64 : 32;
+  const imageHeight = isDeviceSizePC ? 64 : 32;
     return (
         <Section >
             <Title>Follow Me</Title>
             <SNSList>
                 <SNSListItem>
                     <SNSLink href={"https://twitter.com/pntgn09"}>
-                    <SNSImage src={"./img/Twitter.png"} width={snsImageWidth} height={snsImageHeight} />
+                    <SNSImage src={"./img/Twitter.png"} width={imageWidth} height={imageHeight} />
                     </SNSLink>
                 </SNSListItem>
                 <SNSListItem>
                     <SNSLink href={"https://www.instagram.com/maaya_ashida/"}>
-                    <SNSImage src={"./img/Instagram.png"} width={snsImageWidth} height={snsImageHeight} />
+                    <SNSImage src={"./img/Instagram.png"} width={imageWidth} height={imageHeight} />
                     </SNSLink>
                 </SNSListItem>
                 <SNSListItem>
                     <SNSLink href={"https://note.com/mashida"}>
-                    <SNSImage src={"./img/Note.png"} width={snsImageWidth} height={snsImageHeight} />
+                    <SNSImage src={"./img/Note.png"} width={imageWidth} height={imageHeight} />
                     </SNSLink>
                 </SNSListItem>
             </SNSList>
