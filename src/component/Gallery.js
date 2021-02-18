@@ -88,9 +88,9 @@ const Gallery = props => {
   if (props.galleryItems.length === 0) {
     return null;
   }
-  const isPC = window.matchMedia(`${DeviceSize.pc}`).matches
-  const GalleryImageWidth = isPC ? 256: 96;
-  const GalleryImageHeight = isPC ? 256: 96;
+  const isDeviceSizePC = window.matchMedia(`${DeviceSize.pc}`).matches
+  const imageWidth = isDeviceSizePC ? 256: 96;
+  const imageHeight = isDeviceSizePC ? 256: 96;
     return (
         <Section>
             <Title>Illustration</Title>
@@ -98,7 +98,7 @@ const Gallery = props => {
               {props.galleryItems.map((item, number) => (
                 <GalleryListItem number={number} key={number.toString()}>
                   <GalleryLink href={item.link}>
-                    <GalleryImage src={item.image} width={GalleryImageWidth} height={GalleryImageHeight}/>
+                    <GalleryImage src={item.image} width={imageWidth} height={imageHeight}/>
                   </GalleryLink>
                 </GalleryListItem>
               ))}

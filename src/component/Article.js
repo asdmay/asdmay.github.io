@@ -121,9 +121,9 @@ const Article = props => {
   if (props.articleItems.length === 0) {
     return null;
   }
-  const isPC = window.matchMedia(`${DeviceSize.pc}`).matches
-  const ArticleImageWidth = isPC ? 375 : 120;
-  const ArticleImageHeight = isPC ? 272 : 87;
+  const isDeviceSizePC = window.matchMedia(`${DeviceSize.pc}`).matches
+  const imageWidth = isDeviceSizePC ? 375 : 120;
+  const imageHeight = isDeviceSizePC ? 272 : 87;
   return (
     <Section>
       <Title>{props.children}</Title>
@@ -131,7 +131,7 @@ const Article = props => {
         {props.articleItems.map((item, number) => (
           <ArticleListItem number={number} key={number.toString()}>
             <ArticleLink href={item.link}>
-              <ArticleImage src={item.image} width={ArticleImageWidth} height={ArticleImageHeight} />
+              <ArticleImage src={item.image} width={imageWidth} height={imageHeight} />
               <TextArea>
                 <ArticleTitle>{item.title}</ArticleTitle>
                 <ArticleText>{item.text}</ArticleText>

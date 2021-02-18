@@ -71,12 +71,12 @@ const Text = styled.p`
 `
 
 const AboutMe = () => {
-  const isPC = window.matchMedia(`${DeviceSize.pc}`).matches
-  const AboutMeImageWidth = isPC ? 300 : 160;
-  const AboutMeImageHeight = isPC ? 300 : 160;
+  const isDeviceSizePC = window.matchMedia(`${DeviceSize.pc}`).matches
+  const imageWidth = isDeviceSizePC ? 300 : 160;
+  const imageHeight = isDeviceSizePC ? 300 : 160;
   return (
     <Header>
-      <Image src={"./img/top.jpg"} width={AboutMeImageWidth} height={AboutMeImageHeight}/>
+      <Image src={"./img/top.jpg"} width={imageWidth} height={imageHeight}/>
       <TextArea>
         <Title>MAAYA ASHIDA</Title>
         <Text> UI/UX designer in Yahoo Japan Corporation.<br></br>
