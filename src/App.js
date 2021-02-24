@@ -13,12 +13,12 @@ const App = () => {
       link: "https://rakus.connpass.com/event/200838/",
       image: "./img/210209LT.png",
       title: "UI/UXのトレンド（2020年／2021年）LT会に登壇しました",
-      text: "2020~2021年のUIデザイントレンドのNeumorphismについてお話しました。"
+      text: "2020~2021年のUIデザイントレンドのNeumorphismについてお話しました"
     },
     {
       link: "https://youtu.be/i9ibnwtrRbE",
       image: "./img/yjtc2021.png",
-      title: "Yahoo! JAPAN Tech Confernece 2021に登壇しました。",
+      title: "Yahoo! JAPAN Tech Confernece 2021に登壇しました",
       text: "「スマホ Web 版トップページの事例で学ぶ デザインシステム導入の過程で意識すべきポイント」についてお話しました"
     },
   ]
@@ -30,7 +30,7 @@ const App = () => {
       image: "./img/techblog2020.png",
       title: "スマホWeb版 Yahoo! JAPANトップページ デザインシステム導入",
       text:
-        "デザインシステムを導入した経緯や手法について書いています。"
+        "デザインシステムを導入した経緯や手法について書いています"
     },
     {
       link:
@@ -38,7 +38,7 @@ const App = () => {
       image: "./img/vui.png",
       title: "愛される Voice User Interface への道のり",
       text:
-        "プロトタイピングから得たVUIデザインのTipsについてまとめています。"
+        "プロトタイピングから得たVUIデザインのTipsについてまとめています"
     }
   ];
   const lineStampItems = [
@@ -47,13 +47,13 @@ const App = () => {
       image: "./img/omochiguma.png",
       title: "おもちぐまのスタンプ",
       text:
-        "オリジナルキャラ「おもちぐま」のスタンプです。"
+        "オリジナルキャラ「おもちぐま」のスタンプです"
     },
     {
       link: "https://store.line.me/stickershop/product/1333908/ja",
       image: "./img/kuma_stamp.png",
       title: "KUMA'S STICKER ~1st IMPACT~",
-      text: "はじめて作ったLINEスタンプです。"
+      text: "はじめて作ったLINEスタンプです"
     }
   ];
   const galleryItems = [
