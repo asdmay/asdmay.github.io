@@ -76,7 +76,7 @@ const AboutMe = () => {
   const imageHeight = isDeviceSizePC ? 300 : 160;
   return (
     <Header>
-      <Image src={"./img/top.jpg"} width={imageWidth} height={imageHeight}/>
+      <Image src={"./img/top.jpg"} alt={"Ashida Maayaの画像"}width={imageWidth} height={imageHeight}/>
       <TextArea>
         <Title>MAAYA ASHIDA</Title>
         <Text> UI/UX designer in Yahoo Japan Corporation.<br></br>

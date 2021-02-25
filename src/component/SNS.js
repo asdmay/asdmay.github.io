@@ -80,17 +80,17 @@ const SNS = () => {
             <SNSList>
                 <SNSListItem>
                     <SNSLink href={"https://twitter.com/pntgn09"}>
-                    <SNSImage src={"./img/Twitter.png"} width={imageWidth} height={imageHeight} />
+                    <SNSImage src={"./img/Twitter.png"}  alt={"Twitterのアイコン"} width={imageWidth} height={imageHeight} />
                     </SNSLink>
                 </SNSListItem>
                 <SNSListItem>
                     <SNSLink href={"https://www.instagram.com/maaya_ashida/"}>
-                    <SNSImage src={"./img/Instagram.png"} width={imageWidth} height={imageHeight} />
+                    <SNSImage src={"./img/Instagram.png"}  alt={"Instagramのアイコン"} width={imageWidth} height={imageHeight} />
                     </SNSLink>
                 </SNSListItem>
                 <SNSListItem>
                     <SNSLink href={"https://note.com/mashida"}>
-                    <SNSImage src={"./img/Note.png"} width={imageWidth} height={imageHeight} />
+                    <SNSImage src={"./img/Note.png"} alt={"Noteのアイコン"} width={imageWidth} height={imageHeight} />
                     </SNSLink>
                 </SNSListItem>
             </SNSList>
