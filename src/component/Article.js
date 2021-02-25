@@ -131,7 +131,7 @@ const Article = props => {
         {props.articleItems.map((item, number) => (
           <ArticleListItem number={number} key={number.toString()}>
             <ArticleLink href={item.link}>
-              <ArticleImage src={item.image} width={imageWidth} height={imageHeight} />
+              <ArticleImage src={item.image} alt={item.alt} width={imageWidth} height={imageHeight} />
               <TextArea>
                 <ArticleTitle>{item.title}</ArticleTitle>
                 <ArticleText>{item.text}</ArticleText>

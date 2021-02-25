@@ -98,7 +98,7 @@ const Gallery = props => {
               {props.galleryItems.map((item, number) => (
                 <GalleryListItem number={number} key={number.toString()}>
                   <GalleryLink href={item.link}>
-                    <GalleryImage src={item.image} width={imageWidth} height={imageHeight}/>
+                    <GalleryImage src={item.image} alt={item.alt} width={imageWidth} height={imageHeight}/>
                   </GalleryLink>
                 </GalleryListItem>
               ))}
