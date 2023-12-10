@@ -79,8 +79,8 @@ const AboutMe = () => {
       <Image src={"./img/top.jpg"} alt={"Ashida Maayaの画像"}width={imageWidth} height={imageHeight}/>
       <TextArea>
         <Title>MAAYA ASHIDA</Title>
-        <Text> UI/UX designer in Yahoo Japan Corporation.<br></br>
-     I majored in Interaction Design and Information Compilation at Kansai University.</Text>
+        <Text> UI/UX designer at LY Corporation.<br></br>
+        I majored in Interaction Design and Information Compilation at Kansai University.</Text>
       </TextArea>
     </Header>
   )
