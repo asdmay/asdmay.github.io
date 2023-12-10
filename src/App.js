@@ -12,15 +12,15 @@ const App = () => {
     {
       link: "https://rakus.connpass.com/event/200838/",
       image: "./img/210209LT.png",
-      title: "UI/UXのトレンド（2020年／2021年）LT会に登壇しました",
+      title: "UI/UXのトレンド（2020年／2021年）LT会",
       text: "2020~2021年のUIデザイントレンドのNeumorphismについてお話しました",
       alt: "「UI/UXのトレンド（2020年／2021年）LT会に登壇しました」のサムネイル"
     },
     {
       link: "https://youtu.be/i9ibnwtrRbE",
       image: "./img/yjtc2021.png",
-      title: "Yahoo! JAPAN Tech Confernece 2021に登壇しました",
-      text: "「スマホ Web 版トップページの事例で学ぶ デザインシステム導入の過程で意識すべきポイント」についてお話しました",
+      title: "Yahoo! JAPAN Tech Confernece 2021アーカイブ動画",
+      text: "「スマホ Web 版トップページの事例で学ぶ デザインシステム導入の過程で意識すべきポイント」についてお話しました（※YouTubeに遷移します）",
       alt: "「Yahoo! JAPAN Tech Confernece 2021に登壇しました」のサムネイル"
     },
   ]
@@ -67,9 +67,9 @@ const App = () => {
   const galleryItems = [
     {
       link:
-        "https://www.instagram.com/p/CHncP4DDBHk/?utm_source=ig_web_copy_link",
+        "https://www.instagram.com/p/CgriATsvoZK/?utm_source=ig_web_copy_link",
       image: "./img/omochiguma_01.png",
-      alt: "タオルケットにくるまるおもちぐまのイラスト"
+      alt: "バカンス中のおもちぐまのイラスト"
     },
     {
       link:
@@ -85,7 +85,7 @@ const App = () => {
     },
     {
       link:
-        "https://www.instagram.com/p/CEmGTd0jkCD/?utm_source=ig_web_copy_link",
+        "https://www.instagram.com/p/COGBHKhj3s7/?utm_source=ig_web_copy_link",
       image: "./img/omochiguma_04.png",
       alt: "ぷかぷか浮かぶおもちぐまのイラスト"
     },
@@ -106,8 +106,8 @@ const App = () => {
   return (
     <div className="App">
         <AboutMe />
-        <Article articleItems={eventItems}>Event</Article>
         <Article articleItems={articleItems}>Article</Article>
+        <Article articleItems={eventItems}>Event</Article>
         <Gallery galleryItems={galleryItems} />
         <Article articleItems={lineStampItems}>LINE Stamp</Article>
         <SNS />
