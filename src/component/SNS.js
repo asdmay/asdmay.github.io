@@ -80,7 +80,7 @@ const SNS = () => {
             <SNSList>
                 <SNSListItem>
                     <SNSLink href={"https://twitter.com/pntgn09"}>
-                    <SNSImage src={"./img/Twitter.png"}  alt={"Twitterのアイコン"} width={imageWidth} height={imageHeight} />
+                    <SNSImage src={"./img/X.png"}  alt={"Xのアイコン"} width={imageWidth} height={imageHeight} />
                     </SNSLink>
                 </SNSListItem>
                 <SNSListItem>
