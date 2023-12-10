@@ -84,7 +84,7 @@ const SNS = () => {
                     </SNSLink>
                 </SNSListItem>
                 <SNSListItem>
-                    <SNSLink href={"https://www.instagram.com/maaya_ashida/"}>
+                    <SNSLink href={"https://www.instagram.com/mashida09/"}>
                     <SNSImage src={"./img/Instagram.png"}  alt={"Instagramのアイコン"} width={imageWidth} height={imageHeight} />
                     </SNSLink>
                 </SNSListItem>
