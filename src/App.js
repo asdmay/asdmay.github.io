@@ -28,6 +28,15 @@ const App = () => {
   const articleItems = [
     {
       link:
+        "https://lydesign.jp/n/nfd699e1d0177",
+      image: "./img/techblog2023.png",
+      title: "デザインシステム改善:デザイナーとエンジニアで一緒に進めるコンポーネント整理",
+      text:
+        "コンポーネント整理をエンジニアと協力して進めたプロセスについて書いています",
+      alt: "「デザインシステム改善:デザイナーとエンジニアで一緒に進めるコンポーネント整理」のサムネイル"
+    },
+    {
+      link:
         "https://techblog.yahoo.co.jp/entry/2020120530052930/",
       image: "./img/techblog2020.png",
       title: "スマホWeb版 Yahoo! JAPANトップページ デザインシステム導入",
